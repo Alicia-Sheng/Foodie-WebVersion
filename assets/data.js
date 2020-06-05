@@ -8,9 +8,9 @@ const data =
       "src": "media/CaesarSalad.jpg",
       "alt": "CaesarSalad"
     },
-    "desc":"Crisp Romaine lettuce and Garlic Croutons tossed in Cremy Caesar"
-    "amount": 10000
-    "price": 6.69
+    "desc":"Crisp Romaine lettuce and Garlic Croutons tossed in Cremy Caesar",
+    "amount": 10000,
+    "price": 6.69,
     "ranking": 1
   },
   {
@@ -21,8 +21,8 @@ const data =
       "src": "media/titanic.jpg",
       "alt": "SausageEggCheese"
     },
-    "desc":"A tasty sandwich stacked with egg, American cheese"
-    "amount": 10000
+    "desc":"A tasty sandwich stacked with egg, American cheese",
+    "amount": 10000,
     "price": 5.89,
     "ranking": 2
   },
@@ -34,8 +34,8 @@ const data =
       "src": "media/titanic.jpg",
       "alt": ""
     },
-    "desc":" "
-    "amount": 10000
+    "desc":" ",
+    "amount": 10000,
     "price": 7,
     "ranking": 3
   },
@@ -47,8 +47,8 @@ const data =
       "src": "media/titanic.jpg",
       "alt": ""
     },
-    "desc":" "
-    "amount": 10000
+    "desc":" ",
+    "amount": 10000,
     "price": 7,
     "ranking": 4
   },
@@ -60,8 +60,8 @@ const data =
       "src": "media/titanic.jpg",
       "alt": ""
     },
-    "desc":" "
-    "amount": 10000
+    "desc":" ",
+    "amount": 10000,
     "price": 7,
     "ranking": 5
   }
