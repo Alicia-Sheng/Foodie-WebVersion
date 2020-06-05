@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const Img = styled.img`
   width: 100%;
-  height: 300px;
+  height: 320px;
 `
 
 const Card = ({ food }) => {
@@ -13,12 +13,14 @@ const Card = ({ food }) => {
     <div className='card'>
         <Img src={food.img.src} className='card-img-top' alt={food.img.alt}/>
       <div className='card-body'>
-        <h2 className='card-title'>{`${food.name}`}</h2>
+        <h2 itemProp='headline' className='card-title'>{`${food.name}`}</h2>
+        <p itemProp='description' className='card-desc'>{`${food.desc}`}</p>
+        <span className='card-price'>{`$${food.price}`}</span>
+        <a className='card-order' href="#" title="Order Now">Order Now</a>
+        <div className='restaurant-info'>
+          <h6 itemProp='headline'>{`${food.location}`}</h6>
+        </div>
       </div>
-      <ul className='list-group list-group-flush'>
-        <li className='list-group-item'>{`$${food.price}`}</li>
-        <li className='list-group-item'>{`Location: ${food.location}`}</li>
-      </ul>
     </div>
   );
 };

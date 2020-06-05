@@ -15,8 +15,8 @@ const App = () => {
     </div>
 
     <div className='container-fluid'>
-      <nav className='navbar sticky-top navbar-light bg-dark'>
-        <h1 className='navbar-brand text-light'>Featured Food</h1>
+        <nav className='navbar sticky-top navbar-light bg-white'>
+        <h1 className='navbar-brand text-black'>Featured Food</h1>
       </nav>
 
       <CardList data={foodData} />
