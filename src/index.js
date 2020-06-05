@@ -3,21 +3,21 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CardList from './containers/CardList';
 
-import movieData from '../assets/data.js'
+import foodData from '../assets/data.js'
 
 
 const App = () => {
   return (
    <>
     <div className="jumbotron">
-    <h1>Top Grossing Movies</h1>
-    <p>This is a React demo showing how to create HTML from data</p>
+    <h1>Top Yummy Food</h1>
+    <p>TStill has some problems</p>
     </div>
 
-    <h1>Movie List</h1>
+    <h1>Foodie Temper</h1>
     <ul>
-    {movieData.map(
-        movie => (<li key={movie.id}>{movie.amount} -- {movie.title}</li>))}
+    {foodData.map(
+        food => (<li key={food.id}>{food.amount} -- {food.name}</li>))}
     </ul>
 
     <div className='container-fluid'>
@@ -25,7 +25,7 @@ const App = () => {
         <h1 className='navbar-brand text-light'>MovieList</h1>
       </nav>
 
-      <CardList data={movieData} />
+      <CardList data={foodData} />
 
 
     </div>
