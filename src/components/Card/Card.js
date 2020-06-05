@@ -1,11 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Card.css'
+import styled from 'styled-components';
+// import './Card.css'
+
+const Img = styled.img`
+  width: 100%;
+  height: 300px;
+`
 
 const Card = ({ food }) => {
   return (
     <div className='card'>
-        <img src={food.img.src} className='card-img-top' alt={food.img.alt}/>
+        <Img src={food.img.src} className='card-img-top' alt={food.img.alt}/>
       <div className='card-body'>
         <h2 className='card-title'>{`${food.name}`}</h2>
       </div>
