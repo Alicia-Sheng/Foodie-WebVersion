@@ -2,7 +2,7 @@ const data =
 [
   {
    "id": 1,
-    "name": "CaesarSalad",
+    "name": "Caesar Salad",
     "location": "The Stein",
     "img": {
       "src": "media/CaesarSalad.jpg",
@@ -10,21 +10,19 @@ const data =
     },
     "desc":"Crisp Romaine lettuce and Garlic Croutons tossed in Cremy Caesar",
     "amount": 10000,
-    "price": 6.69,
-    "ranking": 1
+    "price": 6.69
   },
   {
     "id": 2,
-    "name": "SausageEggCheese",
+    "name": "Sausage Egg Cheese",
     "location": "Dunckin Donuts",
     "img": {
-      "src": "media/titanic.jpg",
+      "src": "media/SausageEggCheese.jpg",
       "alt": "SausageEggCheese"
     },
     "desc":"A tasty sandwich stacked with egg, American cheese",
     "amount": 10000,
-    "price": 5.89,
-    "ranking": 2
+    "price": 5.89
   },
   {
     "id": 3,
@@ -36,8 +34,7 @@ const data =
     },
     "desc":" ",
     "amount": 10000,
-    "price": 7,
-    "ranking": 3
+    "price": 0.00
   },
   {
     "id": 4,
@@ -47,10 +44,9 @@ const data =
       "src": "media/titanic.jpg",
       "alt": ""
     },
-    "desc":" ",
+    "desc":"",
     "amount": 10000,
-    "price": 7,
-    "ranking": 4
+    "price": 0.00
   },
   {
     "id": 5,
@@ -60,10 +56,9 @@ const data =
       "src": "media/titanic.jpg",
       "alt": ""
     },
-    "desc":" ",
+    "desc":"",
     "amount": 10000,
-    "price": 7,
-    "ranking": 5
+    "price": 0.00
   }
 ]
 

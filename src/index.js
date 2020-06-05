@@ -10,19 +10,13 @@ const App = () => {
   return (
    <>
     <div className="jumbotron">
-    <h1>Top Yummy Food</h1>
-    <p>it Still has some problems</p>
+    <h1>Foodie</h1>
+    <p>Quick and easy food ordering</p>
     </div>
-
-    <h1>Foodie Temper</h1>
-    <ul>
-    {foodData.map(
-        food => (<li key={food.id}>{food.amount} -- {food.name}</li>))}
-    </ul>
 
     <div className='container-fluid'>
       <nav className='navbar sticky-top navbar-light bg-dark'>
-        <h1 className='navbar-brand text-light'>MovieList</h1>
+        <h1 className='navbar-brand text-light'>Featured Food</h1>
       </nav>
 
       <CardList data={foodData} />

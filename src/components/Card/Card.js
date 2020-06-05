@@ -6,11 +6,11 @@ const Card = ({ food }) => {
     <div className='card'>
       <img src={food.img.src} className='card-img-top' alt={food.img.alt} />
       <div className='card-body'>
-        <h2 className='card-title'>{`#${food.price} - ${food.location} (${food.desc})`}</h2>
+        <h2 className='card-title'>{`${food.name}`}</h2>
       </div>
       <ul className='list-group list-group-flush'>
+        <li className='list-group-item'>{`$${food.price}`}</li>
         <li className='list-group-item'>{`Location: ${food.location}`}</li>
-        <li className='list-group-item'>{`Amount: ${food.amount}`}</li>
       </ul>
     </div>
   );
