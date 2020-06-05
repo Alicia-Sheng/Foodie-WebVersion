@@ -3,27 +3,27 @@ const data =
   {
    "id": 1,
     "name": "CaesarSalad",
-    "location": "Upper Usdan",
+    "location": "The Stein",
     "img": {
       "src": "media/CaesarSalad.jpg",
       "alt": "CaesarSalad"
     },
-    "desc":"nutrious Salad"
+    "desc":"Crisp Romaine lettuce and Garlic Croutons tossed in Cremy Caesar"
     "amount": 10000
-    "price":"$ 3 ?"
+    "price": 6.69
     "ranking": 1
   },
   {
     "id": 2,
     "name": "SausageEggCheese",
-    "location": "Eistein",
+    "location": "Dunckin Donuts",
     "img": {
       "src": "media/titanic.jpg",
       "alt": "SausageEggCheese"
     },
-    "desc":" "
+    "desc":"A tasty sandwich stacked with egg, American cheese"
     "amount": 10000
-    "price": "$ 7",
+    "price": 5.89,
     "ranking": 2
   },
   {
@@ -36,7 +36,7 @@ const data =
     },
     "desc":" "
     "amount": 10000
-    "price": "$ 7",
+    "price": 7,
     "ranking": 3
   },
   {
@@ -49,7 +49,7 @@ const data =
     },
     "desc":" "
     "amount": 10000
-    "price": "$ 7",
+    "price": 7,
     "ranking": 4
   },
   {
@@ -62,7 +62,7 @@ const data =
     },
     "desc":" "
     "amount": 10000
-    "price": "$ 7",
+    "price": 7,
     "ranking": 5
   }
 ]

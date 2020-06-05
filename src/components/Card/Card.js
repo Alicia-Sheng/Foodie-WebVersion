@@ -29,7 +29,7 @@ Card.propTypes = {
       alt: PropTypes.string,
   }),
   desc: PropType.string,
-  price: PropType.string,
+  price: PropType.number,
   ranking: PropTypes.number,
   }).isRequired,
 };

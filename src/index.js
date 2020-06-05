@@ -11,7 +11,7 @@ const App = () => {
    <>
     <div className="jumbotron">
     <h1>Top Yummy Food</h1>
-    <p>TStill has some problems</p>
+    <p>it Still has some problems</p>
     </div>
 
     <h1>Foodie Temper</h1>
