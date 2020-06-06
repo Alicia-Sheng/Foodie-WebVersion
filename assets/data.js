@@ -106,6 +106,66 @@ const data = [{
         "amount": 10000,
         "price": 10.29
     }
+    {
+        "id": 10,
+        "name": "Harvest Salad",
+        "location": "The Stein",
+        "img": {
+            "src": "media/HarvestSalad.jpg",
+            "alt": "Harvest Salad"
+        },
+        "desc": "Crisp Romaine Lettuce. Chopped Applem Dried Cranberries and Red Onion",
+        "amount": 10000,
+        "price": 7.39
+    }
+    {
+        "id": 11,
+        "name": "Asian Quinoa Salad",
+        "location": "The Stein",
+        "img": {
+            "src": "media/AsianQuinoaSalad.jpg",
+            "alt": "Asian Quinoa Salad"
+        },
+        "desc": "Quinoa and Baby Kale Tossed with Shredded Red Cabbage, Carrots, Green Onions and Sesame Seeds, Served with House-Made Asian Hney Vinaigrette",
+        "amount": 10000,
+        "price": 6.29
+    }
+    {
+        "id": 12,
+        "name": "Cheese Pizza",
+        "location": "The Stein",
+        "img": {
+            "src": "media/CheesePizza.jpg",
+            "alt": "Cheese Pizza"
+        },
+        "desc": "Slice of Cheese Pizza"
+        "amount": 10000,
+        "price": 11.49
+    }
+    {
+        "id": 13,
+        "name": "Angus Burger",
+        "location": "The Stein",
+        "img": {
+            "src": "media/AngusBurger.jpg",
+            "alt": "Angus Burger"
+        },
+        "desc": "Served on a toasted brioche bun with lettuce, tomato and Onion"
+        "amount": 10000,
+        "price": 8.49
+    }
+    {
+        "id": 14,
+        "name": "The Impossible Burger Burger",
+        "location": "The Stein",
+        "img": {
+            "src": "media/ImpossibleBurger.jpg",
+            "alt": "The Impossible Burger Burger"
+        },
+        "desc": "Plant-Based Vegan Burger served on a toasted Brioche Bun with lettuce tomato and onion."
+        "amount": 10000,
+        "price": 12.49
+    }
 
 ]
 
