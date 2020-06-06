@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 // import './Card.css'
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from '@fortawesome/free-regular-svg-icons';
+
 const Img = styled.img`
   width: 100%;
   height: 320px;
@@ -11,7 +14,12 @@ const Img = styled.img`
 const Card = ({ food }) => {
   return (
     <div className='card'>
-        <Img src={food.img.src} className='card-img-top' alt={food.img.alt}/>
+      <div className='card-header'>
+        <a href="#" title="" itemProp="url">
+          <Img src={food.img.src} className='card-img-top' alt={food.img.alt}/>
+        </a>
+        <span className="post-rate"><FontAwesomeIcon icon={faStar} /> 5.0</span>
+      </div>
       <div className='card-body'>
         <h2 itemProp='headline' className='card-title'>{`${food.name}`}</h2>
         <p itemProp='description' className='card-desc'>{`${food.desc}`}</p>

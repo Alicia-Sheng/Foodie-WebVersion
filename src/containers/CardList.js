@@ -6,13 +6,13 @@ import './CardList.css'
 
 const CardList = ({data}) => {
   return (
-   <div className='flex-container'>
+    <div className='row'>
      {data.map(food => (
-       <div key={food.id} className='flex-container-element'>
+       <div key={food.id} className='col-md-4 col-sm-6 col-lg-4'>
          <Card food={food} />
        </div>
      ))}
-   </div>
+   </div >
  );
 }
 

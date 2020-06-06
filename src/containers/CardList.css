@@ -2,7 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     background-color: white;
-    justify-content: space-between;
 }
 
 .flex-container-element {
@@ -15,6 +14,42 @@
 
 .card {
     border: none;
+    float: left;
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.card-header {
+    float: left;
+    width: 100%;
+    position: relative;
+    border: none;
+    padding: 0;
+}
+
+.card-header>a {
+    float: left;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-header>span {
+    background-color: #fdcb25;
+}
+
+.post-rate {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 14px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding: 4px 10px;
+    z-index: 1;
+    border-radius: 3px;
 }
 
 .card-body {
@@ -54,6 +89,7 @@
 .card-order {
     background-color: #272727;
     border: 1px solid transparent;
+    border-radius: 5px;
     color: #fff;
     float: right;
     font-size: 12px;
