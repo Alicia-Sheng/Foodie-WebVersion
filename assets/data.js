@@ -57,7 +57,7 @@ const data = [{
         "desc": "A popular Chinese entree made with fried chicken pieces coated in a sweet and slightly spicy sauce",
         "amount": 10000,
         "price": 13.69
-    }
+    },
     {
         "id": 6,
         "name": "Basket of Fries",
@@ -69,7 +69,7 @@ const data = [{
         "desc": "Traditional Fries or Fried Zucchini Sticks with Chipotle Aioli",
         "amount": 10000,
         "price": 3.19
-    }
+    },
     {
         "id": 7,
         "name": "Loaded Nachos",
@@ -81,7 +81,7 @@ const data = [{
         "desc": "Tortilla Chips Covered in Melted Chihuahua Cheese, Olives, Tomatoes, and Fresh Cilantro with sour cream and salsa",
         "amount": 10000,
         "price": 6.99
-    }
+    },
     {
         "id": 8,
         "name": "Chicken Tenders",
@@ -93,7 +93,7 @@ const data = [{
         "desc": "Plain, BBQ or Buffalo Served with Carrot Sticks",
         "amount": 10000,
         "price": 8.29
-    }
+    },
     {
         "id": 9,
         "name": "Wings",
@@ -105,7 +105,7 @@ const data = [{
         "desc": "Your choice of BBQ, Buffalo or Garlic Parmesan Sauce served with Carrot sticks",
         "amount": 10000,
         "price": 10.29
-    }
+    },
     {
         "id": 10,
         "name": "Harvest Salad",
@@ -117,7 +117,7 @@ const data = [{
         "desc": "Crisp Romaine Lettuce. Chopped Applem Dried Cranberries and Red Onion",
         "amount": 10000,
         "price": 7.39
-    }
+    },
     {
         "id": 11,
         "name": "Asian Quinoa Salad",
@@ -129,7 +129,7 @@ const data = [{
         "desc": "Quinoa and Baby Kale Tossed with Shredded Red Cabbage, Carrots, Green Onions and Sesame Seeds, Served with House-Made Asian Hney Vinaigrette",
         "amount": 10000,
         "price": 6.29
-    }
+    },
     {
         "id": 12,
         "name": "Cheese Pizza",
@@ -138,10 +138,10 @@ const data = [{
             "src": "media/CheesePizza.jpg",
             "alt": "Cheese Pizza"
         },
-        "desc": "Slice of Cheese Pizza"
+        "desc": "Slice of Cheese Pizza",
         "amount": 10000,
         "price": 11.49
-    }
+    },
     {
         "id": 13,
         "name": "Angus Burger",
@@ -150,10 +150,10 @@ const data = [{
             "src": "media/AngusBurger.jpg",
             "alt": "Angus Burger"
         },
-        "desc": "Served on a toasted brioche bun with lettuce, tomato and Onion"
+        "desc": "Served on a toasted brioche bun with lettuce, tomato and Onion",
         "amount": 10000,
         "price": 8.49
-    }
+    },
     {
         "id": 14,
         "name": "The Impossible Burger Burger",
@@ -162,7 +162,7 @@ const data = [{
             "src": "media/ImpossibleBurger.jpg",
             "alt": "The Impossible Burger Burger"
         },
-        "desc": "Plant-Based Vegan Burger served on a toasted Brioche Bun with lettuce tomato and onion."
+        "desc": "Plant-Based Vegan Burger served on a toasted Brioche Bun with lettuce tomato and onion.",
         "amount": 10000,
         "price": 12.49
     }
