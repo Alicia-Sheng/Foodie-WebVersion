@@ -4,7 +4,7 @@ const data = [{
         "location": "The Stein",
         "img": {
             "src": "media/CaesarSalad.jpg",
-            "alt": "CaesarSalad"
+            "alt": "Caesar Salad"
         },
         "desc": "Crisp Romaine lettuce and Garlic Croutons tossed in Cremy Caesar",
         "amount": 10000,
@@ -12,11 +12,11 @@ const data = [{
     },
     {
         "id": 2,
-        "name": "Sausage Egg Cheese",
+        "name": "Sausage, Egg & Cheese on Croissant",
         "location": "Dunckin Donuts",
         "img": {
             "src": "media/SausageEggCheese.jpg",
-            "alt": "SausageEggCheese"
+            "alt": "Sausage, Egg & Cheese on Croissant"
         },
         "desc": "A tasty sandwich stacked with egg, American cheese and irresistible sausage",
         "amount": 10000,
@@ -24,39 +24,39 @@ const data = [{
     },
     {
         "id": 3,
-        "name": "",
-        "location": "",
+        "name": "Cheese Quesadilla",
+        "location": "Sherman Dining Hall",
         "img": {
-            "src": "media/titanic.jpg",
-            "alt": ""
+            "src": "media/CheeseQuesadilla.jpg",
+            "alt": "Cheese Quesadilla"
         },
-        "desc": " ",
+        "desc": "A Mexican dish and type of taco, consisting of a tortilla that is filled primarily with cheese",
         "amount": 10000,
-        "price": 0.00
+        "price": 8.99
     },
     {
         "id": 4,
-        "name": "",
-        "location": "",
+        "name": "Beef Spring Rolls",
+        "location": "Sherman Dining Hall",
         "img": {
-            "src": "media/titanic.jpg",
-            "alt": ""
+            "src": "media/BeefSpringRolls.jpg",
+            "alt": "Beef Spring Rolls"
         },
-        "desc": "",
+        "desc": "Carrots and cilantro add a crisp, refreshing taste to stir-fried Omaha Steaks Top Sirloin Steaks",
         "amount": 10000,
-        "price": 0.00
+        "price": 11.39
     },
     {
         "id": 5,
-        "name": "",
-        "location": "",
+        "name": "General Tso's Chicken",
+        "location": "Sherman Dining Hall",
         "img": {
-            "src": "media/titanic.jpg",
-            "alt": ""
+            "src": "media/GeneralTsosChicken.jpg",
+            "alt": "General Tso's Chicken"
         },
-        "desc": "",
+        "desc": "A popular Chinese entree made with fried chicken pieces coated in a sweet and slightly spicy sauce",
         "amount": 10000,
-        "price": 0.00
+        "price": 13.69
     }
 ]
 
