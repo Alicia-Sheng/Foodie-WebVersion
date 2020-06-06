@@ -8,7 +8,7 @@ import { faStar } from '@fortawesome/free-regular-svg-icons';
 
 const Img = styled.img`
   width: 100%;
-  height: 320px;
+  height: 360px;
 `
 
 const Card = ({ food }) => {

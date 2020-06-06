@@ -8,7 +8,7 @@ const CardList = ({data}) => {
   return (
     <div className='row'>
      {data.map(food => (
-       <div key={food.id} className='col-md-4 col-sm-6 col-lg-4'>
+       <div key={food.id} className='col-lg-4 col-md-6 col-xl-4'>
          <Card food={food} />
        </div>
      ))}
