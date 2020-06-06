@@ -1,0 +1,35 @@
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+    background-color: #272727;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #EA1C2C;
+}
+
+#mainNavbar .navbar-brand {
+    color: #EA1C2C;
+    font-size: 1.5rem;
+}
+
+.title-wrapper {
+    float: left;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.title-wrapper .title-inner>h2 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.title-inner {
+    display: inline-block;
+    max-width: 55%;
+    vertical-align: middle;
+}
