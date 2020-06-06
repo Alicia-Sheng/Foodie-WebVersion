@@ -58,6 +58,55 @@ const data = [{
         "amount": 10000,
         "price": 13.69
     }
+    {
+        "id": 6,
+        "name": "Basket of Fries",
+        "location": "The Stein",
+        "img": {
+            "src": "media/Fries.jpg",
+            "alt": "Basket of Fries"
+        },
+        "desc": "Traditional Fries or Fried Zucchini Sticks with Chipotle Aioli",
+        "amount": 10000,
+        "price": 3.19
+    }
+    {
+        "id": 7,
+        "name": "Loaded Nachos",
+        "location": "The Stein",
+        "img": {
+            "src": "media/LoadedNachos.jpg",
+            "alt": "Loaded Nachos"
+        },
+        "desc": "Tortilla Chips Covered in Melted Chihuahua Cheese, Olives, Tomatoes, and Fresh Cilantro with sour cream and salsa",
+        "amount": 10000,
+        "price": 6.99
+    }
+    {
+        "id": 8,
+        "name": "Chicken Tenders",
+        "location": "The Stein",
+        "img": {
+            "src": "media/ChickenTenders.jpg",
+            "alt": "Chicken Tenders"
+        },
+        "desc": "Plain, BBQ or Buffalo Served with Carrot Sticks",
+        "amount": 10000,
+        "price": 8.29
+    }
+    {
+        "id": 9,
+        "name": "Wings",
+        "location": "The Stein",
+        "img": {
+            "src": "media/Wings.jpg",
+            "alt": "Wings"
+        },
+        "desc": "Your choice of BBQ, Buffalo or Garlic Parmesan Sauce served with Carrot sticks",
+        "amount": 10000,
+        "price": 10.29
+    }
+
 ]
 
 export default data;
