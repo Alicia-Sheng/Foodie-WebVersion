@@ -4,11 +4,11 @@ import CardList from '../containers/CardList';
 
 import foodData from '../../assets/data.js'
 
-import '../style.css'
+// import '../style.css'
 
 function MainContent() {
   return (
-    <div>
+    <>
       <div className='container-fluid'>
         <div className='container'>
           <div className='row'>
@@ -24,7 +24,7 @@ function MainContent() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
