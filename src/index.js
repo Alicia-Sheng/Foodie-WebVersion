@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CardList from './containers/CardList';
@@ -21,7 +21,7 @@ const App = () => {
             <a href="" className="nav-link">HOME</a>
           </li>
           <li className="nav-item">
-            <a href="" className="nav-link">RESTAURANTS</a>
+            <a href="/sherman.html" className="nav-link">RESTAURANTS</a>
           </li>
           <li className="nav-item">
             <a href="" className="nav-link">ABOUT</a>
@@ -48,5 +48,12 @@ const App = () => {
    </>
   );
 };
+
+ReactDOM.render(<App />, document.getElementById('root'));*/
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import App from './App'
 
 ReactDOM.render(<App />, document.getElementById('root'));
