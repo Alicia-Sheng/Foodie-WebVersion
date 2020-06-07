@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -12,10 +13,10 @@ function Navbar() {
       <div className="collapse navbar-collapse" id="navLinks">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a href="" className="nav-link">HOME</a>
+            <Link to="/" exact className="nav-link">HOME</Link>
           </li>
           <li className="nav-item">
-            <a href="/sherman.html" className="nav-link">RESTAURANTS</a>
+            <Link to="/sherman" exact className="nav-link">RESTAURANTS</Link>
           </li>
           <li className="nav-item">
             <a href="" className="nav-link">ABOUT</a>
