@@ -18,7 +18,7 @@ const Card = ({ food }) => {
         <a href="#" title="" itemProp="url">
           <Img src={food.img.src} className='card-img-top' alt={food.img.alt}/>
         </a>
-        <span className="post-rate"><FontAwesomeIcon icon={faStar} /> 5.0</span>
+        <span className="post-rate"><FontAwesomeIcon icon={faStar} /> {`${food.rating}`}</span>
       </div>
       <div className='card-body'>
         <h2 itemProp='headline' className='card-title'>{`${food.name}`}</h2>
@@ -36,7 +36,7 @@ const Card = ({ food }) => {
 Card.propTypes = {
   food: PropTypes.object.isRequired
 }
-/*
+
 Card.propTypes = {
   food: PropTypes.shape({
   name: PropTypes.string,
@@ -45,10 +45,10 @@ Card.propTypes = {
       src: PropTypes.string,
       alt: PropTypes.string,
   }),
-  desc: PropType.string,
-  price: PropType.number,
-  ranking: PropTypes.number,
+  desc: PropTypes.string,
+  price: PropTypes.number,
+  rating: PropTypes.number
   }).isRequired,
 };
-*/
+
 export default Card;
