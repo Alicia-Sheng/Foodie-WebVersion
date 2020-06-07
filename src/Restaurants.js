@@ -1,9 +1,19 @@
-import React from 'react';
+import React from 'react'
 
-const Restaurants = () => {
+import './style.css'
+
+function Restaurants() {
   return (
-    <h1>Restaurants</h1>
-  );
-};
+    <div>
 
-export default Restaurants;
+      <div className="title-wrapper text-center">
+        <div className="title-inner">
+          <h2 itemProp="headline">Restaurants</h2>
+        </div>
+      </div>
+
+    </div>
+  )
+}
+
+export default Restaurants
