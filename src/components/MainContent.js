@@ -4,7 +4,7 @@ import CardList from '../containers/CardList';
 
 import foodData from '../../assets/data.js'
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../style.css'
 
 function MainContent() {
   return (
