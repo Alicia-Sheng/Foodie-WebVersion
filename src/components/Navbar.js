@@ -16,7 +16,7 @@ function Navbar() {
             <Link to="/" exact className="nav-link">HOME</Link>
           </li>
           <li className="nav-item">
-            <Link to="/sherman" exact className="nav-link">RESTAURANTS</Link>
+            <Link to="/restaurants" exact className="nav-link">RESTAURANTS</Link>
           </li>
           <li className="nav-item">
             <a href="" className="nav-link">ABOUT</a>
