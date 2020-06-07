@@ -8,7 +8,8 @@ const data = [{
         },
         "desc": "Crisp Romaine lettuce and Garlic Croutons tossed in Cremy Caesar",
         "amount": 10000,
-        "price": 6.69
+        "price": 6.69,
+        "rating": 5.0
     },
     {
         "id": 2,
@@ -20,7 +21,8 @@ const data = [{
         },
         "desc": "A tasty sandwich stacked with egg, American cheese and irresistible sausage",
         "amount": 10000,
-        "price": 5.89
+        "price": 5.89,
+        "rating": 5.0
     },
     {
         "id": 3,
@@ -32,7 +34,8 @@ const data = [{
         },
         "desc": "A Mexican dish and type of taco, consisting of a tortilla that is filled primarily with cheese",
         "amount": 10000,
-        "price": 8.99
+        "price": 8.99,
+        "rating": 5.0
     },
     {
         "id": 4,
@@ -44,7 +47,8 @@ const data = [{
         },
         "desc": "Carrots and cilantro add a crisp, refreshing taste to stir-fried Omaha Steaks Top Sirloin Steaks",
         "amount": 10000,
-        "price": 11.39
+        "price": 11.39,
+        "rating": 5.0
     },
     {
         "id": 5,
@@ -56,7 +60,8 @@ const data = [{
         },
         "desc": "A popular Chinese entree made with fried chicken pieces coated in a sweet and slightly spicy sauce",
         "amount": 10000,
-        "price": 13.69
+        "price": 13.69,
+        "rating": 5.0
     },
     {
         "id": 6,
@@ -68,7 +73,8 @@ const data = [{
         },
         "desc": "Traditional Fries or Fried Zucchini Sticks with Chipotle Aioli",
         "amount": 10000,
-        "price": 3.19
+        "price": 3.19,
+        "rating": 5.0
     },
     {
         "id": 7,
@@ -80,7 +86,8 @@ const data = [{
         },
         "desc": "Tortilla Chips Covered in Melted Chihuahua Cheese, Olives, Tomatoes, and Fresh Cilantro with sour cream and salsa",
         "amount": 10000,
-        "price": 6.99
+        "price": 6.99,
+        "rating": 5.0
     },
     {
         "id": 8,
@@ -92,7 +99,8 @@ const data = [{
         },
         "desc": "Plain, BBQ or Buffalo Served with Carrot Sticks",
         "amount": 10000,
-        "price": 8.29
+        "price": 8.29,
+        "rating": 5.0
     },
     {
         "id": 9,
@@ -104,7 +112,8 @@ const data = [{
         },
         "desc": "Your choice of BBQ, Buffalo or Garlic Parmesan Sauce served with Carrot sticks",
         "amount": 10000,
-        "price": 10.29
+        "price": 10.29,
+        "rating": 5.0
     },
     {
         "id": 10,
@@ -116,7 +125,8 @@ const data = [{
         },
         "desc": "Crisp Romaine Lettuce. Chopped Applem Dried Cranberries and Red Onion",
         "amount": 10000,
-        "price": 7.39
+        "price": 7.39,
+        "rating": 5.0
     },
     {
         "id": 11,
@@ -128,7 +138,8 @@ const data = [{
         },
         "desc": "Quinoa and Baby Kale Tossed with Shredded Red Cabbage, Carrots, Green Onions and Sesame Seeds, Served with House-Made Asian Hney Vinaigrette",
         "amount": 10000,
-        "price": 6.29
+        "price": 6.29,
+        "rating": 5.0
     },
     {
         "id": 12,
@@ -140,7 +151,8 @@ const data = [{
         },
         "desc": "Slice of Cheese Pizza",
         "amount": 10000,
-        "price": 11.49
+        "price": 11.49,
+        "rating": 5.0
     },
     {
         "id": 13,
@@ -152,7 +164,8 @@ const data = [{
         },
         "desc": "Served on a toasted brioche bun with lettuce, tomato and Onion",
         "amount": 10000,
-        "price": 8.49
+        "price": 8.49,
+        "rating": 5.0
     },
     {
         "id": 14,
@@ -164,7 +177,8 @@ const data = [{
         },
         "desc": "Plant-Based Vegan Burger served on a toasted Brioche Bun with lettuce tomato and onion.",
         "amount": 10000,
-        "price": 12.49
+        "price": 12.49,
+        "rating": 5.0
     }
 
 ]
