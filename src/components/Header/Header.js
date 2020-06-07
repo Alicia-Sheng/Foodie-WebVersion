@@ -3,16 +3,12 @@ import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './Header.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => (
     <nav id="mainNavbar" className="navbar navbar-dark navbar-expand-md sticky-top">
         <div className="container">
             <Link className="navbar-brand js-scroll-trigger hidden" to="/">FOODIE</Link>
-            <div className="searchbar">
-                <input className="search_input" type="text" name="" placeholder="Search..." />
-                <a href="#" className="search_icon"><FontAwesomeIcon icon={faSearch} /></a>
-            </div>
             <div>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -27,6 +23,15 @@ const Header = () => (
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div className="searchbar">
+                <input className="search_input" type="text" name="" placeholder="Search..." />
+                <a href="#" className="search_icon"><FontAwesomeIcon icon={faSearch} /></a>
+            </div>
+            <div>
+                <Link className='shoppingbag'>
+                    <FontAwesomeIcon icon={faShoppingBag} />
+                </Link>
             </div>
         </div>
     </nav>
