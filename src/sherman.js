@@ -1,4 +1,4 @@
-/*import React from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CardList from './containers/CardList';
@@ -21,7 +21,7 @@ const App = () => {
             <a href="" className="nav-link">HOME</a>
           </li>
           <li className="nav-item">
-            <a href="/sherman.html" className="nav-link">RESTAURANTS</a>
+            <a href="" className="nav-link">RESTAURANTS</a>
           </li>
           <li className="nav-item">
             <a href="" className="nav-link">ABOUT</a>
@@ -31,31 +31,18 @@ const App = () => {
     </nav>
 
     <div className='container-fluid'>
-      <div className='container'>
-      <div className='row'>
-        <div className="col-md-12 col-sm-12 col-lg-12">
-          <div className="title-wrapper text-center">
-            <div className="title-inner">
-              <h2 itemProp="headline">Choose & Enjoy</h2>
-            </div>
-          </div>
 
-          <CardList data={foodData} />
+      <div className="title-wrapper text-center">
+        <div className="title-inner">
+          <h2 itemProp="headline">Sherman</h2>
         </div>
       </div>
-      </div>
+
+      <CardList data={foodData} />
+
     </div>
    </>
   );
 };
 
-ReactDOM.render(<App />, document.getElementById('root'));*/
-
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-import App from './App'
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('sherman'));
