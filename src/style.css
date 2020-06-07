@@ -3,25 +3,6 @@
     max-width: 1380px;
 }
 
-#mainNavbar {
-    font-size: 1.5rem;
-    font-weight: 100;
-    background-color: #272727;
-}
-
-#mainNavbar .nav-link {
-    color: white;
-}
-
-#mainNavbar .nav-link:hover {
-    color: #EA1C2C;
-}
-
-#mainNavbar .navbar-brand {
-    color: #EA1C2C;
-    font-size: 1.5rem;
-}
-
 .title-wrapper {
     float: left;
     width: 100%;
@@ -34,7 +15,9 @@
 }
 
 .title-inner {
+    font-family: Poppins;
     display: inline-block;
     max-width: 55%;
     vertical-align: middle;
+    text-transform: uppercase;
 }
