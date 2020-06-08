@@ -1,0 +1,21 @@
+img {
+    height: 100px;
+    vertical-align: middle;
+}
+
+.food-img-section {
+    float: left;
+    width: 20%;
+}
+
+.food-body {
+    float: left;
+    width: 70%;
+    height: 100px;
+}
+
+.food-price-section {
+    float: left;
+    width: 10%;
+    height: 100px;
+}
