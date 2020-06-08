@@ -6,7 +6,7 @@ const data = [{
             "src": "media/CaesarSalad.jpg",
             "alt": "Caesar Salad"
         },
-        "desc": "Crisp Romaine lettuce and Garlic Croutons tossed in Cremy Caesar",
+        "desc": "Crisp Romaine lettuce and Garlic Croutons tossed in Creamy Caesar",
         "amount": 10000,
         "price": 6.69,
         "rating": 5.0
@@ -175,12 +175,50 @@ const data = [{
             "src": "media/ImpossibleBurger.jpg",
             "alt": "The Impossible Burger Burger"
         },
-        "desc": "Plant-Based Vegan Burger served on a toasted Brioche Bun with lettuce tomato and onion.",
+        "desc": "Plant-Based Vegan Burger served on a toasted Brioche Bun with lettuce tomato and onion",
         "amount": 10000,
         "price": 12.49,
         "rating": 5.0
+    },
+    {
+        "id": 15,
+        "name": "Frozen Chocolate",
+        "location": "Dunckin Donuts",
+        "img": {
+            "src": "media/FrozenChocolate.jpg",
+            "alt": "Frozen Chocolate"
+        },
+        "desc": "Our Frozen Chocolate is an indulgent treat, made with your choice of flavor and topped with whipped cream",
+        "amount": 10000,
+        "price": 4.99,
+        "rating": 5.0
+    },
+    {
+        "id": 16,
+        "name": "Coolatta",
+        "location": "Dunckin Donuts",
+        "img": {
+            "src": "media/Coolatta.jpg",
+            "alt": "Coolatta"
+        },
+        "desc": "Fun, refreshing flavors that are sure to make you smile",
+        "amount": 10000,
+        "price": 3.99,
+        "rating": 5.0
+    },
+    {
+        "id": 17,
+        "name": "Frozen Coffee",
+        "location": "Dunckin Donuts",
+        "img": {
+            "src": "media/FrozenCoffee.jpg",
+            "alt": "Frozen Coffee"
+        },
+        "desc": "Our NEW energizing Frozen Coffee is smooth, creamy and full of real Dunkin’® flavor—making it the perfect way to cool off",
+        "amount": 10000,
+        "price": 3.99,
+        "rating": 5.0
     }
-
 ]
 
 export default data;
