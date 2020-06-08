@@ -6,11 +6,17 @@ import './RestaurantList.css'
 
 const RestaurantList = ({data}) => {
   return (
-    <section>
+    <>
+      <section>
       <div className="block remove-bottom">
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-sm-12 col-lg-12">
+              <div className="title1-wrapper text-center">
+                <div className="title1-inner">
+                    <h2 itemProp="headline">Top Restaurants & Cafe</h2>
+                </div>
+              </div>
               <div className="top-restaurants-wrapper">
                 <ul className="restaurants-wrapper style2">
                   {data.map(restaurant => (
@@ -25,6 +31,7 @@ const RestaurantList = ({data}) => {
         </div>
       </div>
     </section>
+    </>
  );
 }
 

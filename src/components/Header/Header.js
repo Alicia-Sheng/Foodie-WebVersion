@@ -30,7 +30,8 @@ const Header = () => (
             </div>
             <div>
                 <Link className='shoppingbag'>
-                    <FontAwesomeIcon icon={faShoppingBag} />
+                    <FontAwesomeIcon icon={faShoppingBag} /> 
+                    <span> 2</span>
                 </Link>
             </div>
         </div>
