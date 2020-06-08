@@ -169,7 +169,7 @@ const data = [{
     },
     {
         "id": 14,
-        "name": "The Impossible Burger Burger",
+        "name": "The Impossible Burger",
         "location": "The Stein",
         "img": {
             "src": "media/ImpossibleBurger.jpg",
