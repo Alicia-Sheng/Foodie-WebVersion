@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Header from './Header/Header'
 import MainContent from './MainContent'
-import Restaurants from '../restaurants'
+import restaurants from '../restaurants'
 
 function App() {
   return(
@@ -11,7 +11,7 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={MainContent} />
-          <Route exact path="/restaurants" component={Restaurants} />
+          <Route exact path="/restaurants" component={restaurants} />
         </Switch>
     </Router>
     )
