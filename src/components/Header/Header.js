@@ -29,7 +29,7 @@ const Header = () => (
                 <a href="#" className="search_icon"><FontAwesomeIcon icon={faSearch} /></a>
             </div>
             <div>
-                <Link className='shoppingbag'>
+                <Link to="/order" className = 'shoppingbag' >
                     <FontAwesomeIcon icon={faShoppingBag} /> 
                     <span> 2</span>
                 </Link>
