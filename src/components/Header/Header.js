@@ -11,7 +11,7 @@ const Header = () => (
         <div className="topbar hidden">
             <div className="container">
                 <div className="topbar-register">
-                    <a className="log-popup-btn" href="/login" title="Login" itemProp="url">LOGIN</a> / <a className="sign-popup-btn" href="/register" title="Register" itemProp="url">REGISTER</a>
+                    <Link to="/account/login" className="log-popup-btn" title="Login" itemProp="url">LOGIN</Link> / <Link to="/account/register" className="sign-popup-btn" title="Register" itemProp="url">REGISTER</Link>
                 </div>
                 <div className="social1">
                     <a href="#" title="Facebook" itemProp="url" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} /></a>
