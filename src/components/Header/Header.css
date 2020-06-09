@@ -9,66 +9,17 @@ header {
     box-shadow: 0 4px 2px rgba(0, 0, 0, .18);
 }
 
+header.stick {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 .topbar {
     background-color: #161616;
     float: left;
     width: 100%;
-    height: 46px;
-}
-
-select {
-    border: 0;
-}
-
-.select-wrp {
-    float: left;
-    position: relative;
-}
-
-.select-wrp+.select-wrp {
-    padding-left: 20px;
-    margin-left: 20px;
-    border-left: 1px solid rgba(229, 229, 229, .2);
-}
-
-.select-wrp .chosen-container-single .chosen-single {
-    background: no-repeat;
-    border: 0;
-    -webkit-box-shadow: none;
-    -ms-box-shadow: none;
-    -o-box-shadow: none;
-    box-shadow: none;
-    height: auto;
-    line-height: 46px;
-    font-size: 10px;
-    color: #fff;
-    font-family: Poppins;
-    font-weight: 500;
-    position: relative;
-    padding-left: 0;
-    padding-right: 28px;
-}
-
-.select-wrp .chosen-container-single .chosen-single:before {
-    content: "\f0d7";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    font-family: fontawesome;
-    font-size: 12px;
-    color: #fff;
-}
-
-.select-wrp .chosen-container-single .chosen-single div {
-    display: none !important;
-}
-
-.select-wrp .chosen-container-single .chosen-single>span {
-    margin-right: 0 !important;
-}
-
-.select-wrp .chosen-container-active .chosen-single::before {
-    content: "\f0d8";
+    height: 40px;
 }
 
 .topbar-register {
@@ -77,48 +28,14 @@ select {
     font-family: Poppins;
     font-weight: 500;
     color: #fff;
-    padding: 15px 0 14px 40px;
+    padding: 12px 0 14px 40px;
     border-left: 1px solid rgba(229, 229, 229, .2);
     margin-left: 35px;
 }
 
-.select-wrp .chosen-container-single .chosen-drop {
-    -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, .38);
-    -ms-box-shadow: 4px 4px 0 rgba(0, 0, 0, .38);
-    -o-box-shadow: 4px 4px 0 rgba(0, 0, 0, .38);
-    box-shadow: 4px 4px 0 rgba(0, 0, 0, .38);
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    margin: 0;
-    border: 0;
-    width: 190px;
-}
-
-.select-wrp .chosen-container-single .chosen-drop>ul li {
-    font-size: 12px;
-    font-family: Poppins;
-    font-weight: 600;
-    color: #2d2d2d;
-    border-bottom: 1px solid #ededed;
-    padding: 5px 0;
-    float: left;
-    width: 100%;
-}
-
-.select-wrp .chosen-container-single .chosen-drop>ul li:last-child {
-    border-bottom: 0;
-}
-
-.select-wrp .chosen-container-single .chosen-drop>ul {
-    margin: 0;
-    padding: 10px 20px;
-}
-
-.select-wrp .chosen-container-single .chosen-drop>ul li.result-selected,
-.select-wrp .chosen-container-single .chosen-drop>ul li.highlighted,
-.select-wrp .chosen-container-single .chosen-drop>ul li:hover {
-    background-color: transparent;
-    background-image: none;
+.topbar-register>a:hover,
+.social1>a:hover {
+    color: #e74c3c;
 }
 
 
@@ -126,7 +43,7 @@ select {
 
 .social1 {
     float: right;
-    margin-top: 11px;
+    margin-top: 8px;
 }
 
 .social1>a {
@@ -148,7 +65,7 @@ select {
 #mainNavbar {
     font-size: 1.5rem;
     font-weight: 100;
-    background-color: #272727;
+    background-color: #161616;
 }
 
 #mainNavbar .container {
@@ -161,11 +78,11 @@ select {
 }
 
 #mainNavbar .nav-link:hover {
-    color: #EA1C2C;
+    color: #e74c3c;
 }
 
 #mainNavbar .navbar-brand {
-    color: #EA1C2C;
+    color: #e74c3c;
     font-size: 1.5rem;
 }
 

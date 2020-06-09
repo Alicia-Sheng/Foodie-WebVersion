@@ -4,18 +4,19 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './Header.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faShoppingBag} from '@fortawesome/free-solid-svg-icons';
+import { faFacebookSquare, faTwitter, faGoogle } from "@fortawesome/free-brands-svg-icons"
 
 const Header = () => (
     <header className="stick">
-        <div className="topbar">
+        <div className="topbar hidden">
             <div className="container">
                 <div className="topbar-register">
                     <a className="log-popup-btn" href="/login" title="Login" itemProp="url">LOGIN</a> / <a className="sign-popup-btn" href="/register" title="Register" itemProp="url">REGISTER</a>
                 </div>
                 <div className="social1">
-                    <a href="#" title="Facebook" itemProp="url" target="_blank"><i className="fa fa-facebook-square"></i></a>
-                    <a href="#" title="Twitter" itemProp="url" target="_blank"><i className="fa fa-twitter"></i></a>
-                    <a href="#" title="Google Plus" itemProp="url" target="_blank"><i className="fa fa-google-plus"></i></a>
+                    <a href="#" title="Facebook" itemProp="url" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} /></a>
+                    <a href="#" title="Twitter" itemProp="url" target="_blank"><FontAwesomeIcon icon={faTwitter} /></a>
+                    <a href="#" title="Google Plus" itemProp="url" target="_blank"><FontAwesomeIcon icon={faGoogle} /></a>
                 </div>
             </div>
         </div>
