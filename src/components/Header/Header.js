@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './Header.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faShoppingBag } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faShoppingBag,faUser} from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => (
     <nav id="mainNavbar" className="navbar navbar-dark navbar-expand-md sticky-top">
@@ -29,11 +29,21 @@ const Header = () => (
                 <a href="#" className="search_icon"><FontAwesomeIcon icon={faSearch} /></a>
             </div>
             <div>
-                <Link to="/order" className = 'shoppingbag' >
-                    <FontAwesomeIcon icon={faShoppingBag} /> 
-                    <span> 2</span>
-                </Link>
+                <ul className="navbar-nav ml-auto">
+                      <li className="nav-item active">
+                          <Link to="/order" className = 'shoppingbag' >
+                            <FontAwesomeIcon icon={faShoppingBag} />
+                            <span> 2   </span>
+                          </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link to="/login" className = 'login' >
+                          <FontAwesomeIcon icon={faUser} />
+                        </Link>
+                      </li>
+                </ul>
             </div>
+
         </div>
     </nav>
 
