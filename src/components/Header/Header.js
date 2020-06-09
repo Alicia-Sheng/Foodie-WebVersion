@@ -3,9 +3,22 @@ import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './Header.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faShoppingBag,faUser} from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faShoppingBag} from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => (
+    <header className="stick">
+        <div className="topbar">
+            <div className="container">
+                <div className="topbar-register">
+                    <a className="log-popup-btn" href="/login" title="Login" itemProp="url">LOGIN</a> / <a className="sign-popup-btn" href="/register" title="Register" itemProp="url">REGISTER</a>
+                </div>
+                <div className="social1">
+                    <a href="#" title="Facebook" itemProp="url" target="_blank"><i className="fa fa-facebook-square"></i></a>
+                    <a href="#" title="Twitter" itemProp="url" target="_blank"><i className="fa fa-twitter"></i></a>
+                    <a href="#" title="Google Plus" itemProp="url" target="_blank"><i className="fa fa-google-plus"></i></a>
+                </div>
+            </div>
+        </div>
     <nav id="mainNavbar" className="navbar navbar-dark navbar-expand-md sticky-top">
         <div className="container">
             <Link className="navbar-brand js-scroll-trigger hidden" to="/">FOODIE</Link>
@@ -19,7 +32,7 @@ const Header = () => (
                             <a className="nav-link" href="#">FOOD<span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item">
-                            <Link to="/restaurants" exact className="nav-link">RESTAURANTS</Link>
+                            <Link to="/restaurants" exact className="nav-link">BEVERAGE</Link>
                         </li>
                     </ul>
                 </div>
@@ -29,23 +42,15 @@ const Header = () => (
                 <a href="#" className="search_icon"><FontAwesomeIcon icon={faSearch} /></a>
             </div>
             <div>
-                <ul className="navbar-nav ml-auto">
-                      <li className="nav-item active">
-                          <Link to="/order" className = 'shoppingbag' >
-                            <FontAwesomeIcon icon={faShoppingBag} />
-                            <span> 2   </span>
-                          </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link to="/login" className = 'login' >
-                          <FontAwesomeIcon icon={faUser} />
-                        </Link>
-                      </li>
-                </ul>
+                <Link to="/order" className = 'shoppingbag' >
+                <FontAwesomeIcon icon={faShoppingBag} />
+                <span> 2   </span>
+                </Link>
             </div>
 
         </div>
     </nav>
+</header>
 
 );
 export default Header;
