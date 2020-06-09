@@ -127,6 +127,45 @@ const stein = [{
         "amount": 10000,
         "price": 12.49,
         "rating": 5.0
+    },
+    {
+      "id": 18,
+      "name": "Coke",
+      "location": "The Stein",
+      "img": {
+          "src": "media/Coke.jpg",
+          "alt": "Coke"
+      },
+      "desc": "Classic, sweet coke. Free with a main course.",
+      "amount": 10000,
+      "price": 0.0,
+      "rating": 5.0
+    },
+    {
+      "id": 19,
+      "name": "Ginger Ale",
+      "location": "The Stein",
+      "img": {
+          "src": "media/GingerAle.jpg",
+          "alt": "Ginger Ale"
+      },
+      "desc": " A popular carbonated beverage made by flavoring soft drink with ginger. Free with a main course.",
+      "amount": 10000,
+      "price": 0.0,
+      "rating": 5.0
+    },
+    {
+      "id": 20,
+      "name": "Lemonade",
+      "location": "The Stein",
+      "img": {
+          "src": "media/LemonNade.jpg",
+          "alt": "Lemonade"
+      },
+      "desc": "Water with Lemon inside. Free with a main course.",
+      "amount": 10000,
+      "price": 0.0,
+      "rating": 5.0
     }
 ]
 
