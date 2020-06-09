@@ -18,7 +18,7 @@ function MenuFood({ food }) {
         </div>
       </div>
     )
-}
+};
 
 MenuFood.propTypes = {
   food: PropTypes.object.isRequired
