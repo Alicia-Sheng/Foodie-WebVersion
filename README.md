@@ -22,7 +22,7 @@
 
 
 ## Usage
-
+- Brandeis students, Brandeis restaurants, Brandeis faculty
 
 ## Demo
 
