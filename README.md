@@ -21,11 +21,11 @@
 - Thus, a app specifically designed for Brandeis students can help students to order food more conveniently online
 
 ## Features
-**- For Food Providers**
+- **For Food Providers**
     - Add food options
     - Receive orders
     - Edit daily recommendations
-**- For Customers**
+- **For Customers**
     - Browse food and beverage options
         - Filter by restaurant, category, etc
         - Rank by rating, price
