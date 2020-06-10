@@ -24,9 +24,8 @@
 
 
 ## Usage
-- Brandeis students
-- Brandeis restaurants
-- Brandeis faculty
+- Users: Brandeis students, Brandeis restaurants, Brandeis faculty
+- Function: food ordering, giving feedbacks of food, knowing components of food
 
 ## Demo
 
@@ -45,4 +44,4 @@
 
 # Brammy
   
-### This is a program used for helping Brandeis students order food during COVID-19 period.
+##### This is a program used for helping Brandeis students order food during COVID-19 period.
