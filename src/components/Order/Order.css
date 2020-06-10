@@ -309,3 +309,167 @@
         margin-bottom: 60px;
     }
 }
+
+
+/* Order Sec 2 */
+
+.order-wrapper {
+    float: left;
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.order-inner {
+    float: left;
+    width: 100%;
+    margin-bottom: 100px;
+    position: relative;
+    border: 2px solid;
+    z-index: 1;
+}
+
+.order-inner>h4 {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 25px;
+    margin: 30px 0;
+}
+
+.order-list-wrapper {
+    float: left;
+    width: 100%;
+}
+
+.order-list-wrapper>ul {
+    list-style: none;
+}
+
+.order-list-inner {
+    padding: 0 14px;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.order-list-inner>li {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-left: 20px;
+    position: relative;
+}
+
+.order-list-inner>li:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.dish-name>h6 {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 16px;
+    font-family: lato;
+    font-weight: 700;
+    color: #636363;
+    margin: 0;
+}
+
+.dish-name .price {
+    font-size: 15px;
+    float: right;
+}
+
+.dish-ingredients {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.order-info>span.red-clr {
+    font-size: 12px;
+    font-family: Poppins;
+    display: block;
+}
+
+.gradient-brd:before {
+    background: -moz-linear-gradient(0deg, #e03335 0%, #00cfc8 100%);
+    /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #e03335), color-stop(100%, #00cfc8));
+    /* safari4+,chrome */
+    background: -webkit-linear-gradient(0deg, #e03335 0%, #00cfc8 100%);
+    /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(0deg, #e03335 0%, #00cfc8 100%);
+    /* opera 11.10+ */
+    background: -ms-linear-gradient(0deg, #e03335 0%, #00cfc8 100%);
+    /* ie10+ */
+    background: linear-gradient(90deg, #e03335 0%, #00cfc8 100%);
+    /* w3c */
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#e03335', endColorstr='#00cfc8', GradientType=1);
+    /* ie6-9 */
+}
+
+.gradient-brd:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    -webkit-border-radius: inherit;
+    border-radius: inherit;
+}
+
+.gradient-brd:after {
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    content: "";
+}
+
+.mor-ingredients {
+    float: left;
+    width: 100%;
+    padding-left: 25px;
+    margin-top: 5px;
+    position: relative;
+    background-color: red;
+}
+
+.mor-ingredients>a {
+    display: inline-block;
+    border-bottom: 1px solid;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.mor-ingredients:hover .ingradient-list {
+    opacity: 1;
+    visibility: visible
+}
+
+.qty-wrap {
+    margin-top: 20px;
+}
+
+.qty-wrap .input-group {
+    max-width: 200px;
+}
+
+.qty-wrap .qty.form-control,
+.qty-wrap .input-group-btn button {
+    height: 45px;
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 700;
+}

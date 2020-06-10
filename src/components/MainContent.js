@@ -11,8 +11,8 @@ import '../style.css'
 function MainContent() {
   return (
     <>
-    <RestaurantList data={restaurantData} />
-      <div className='container-fluid'>
+      <div div className='container-fluid'>
+        <RestaurantList data={restaurantData} />
         <div className='container'>
           <div className='row'>
             <div className="col-md-12 col-sm-12 col-lg-12">
