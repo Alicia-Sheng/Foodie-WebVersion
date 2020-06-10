@@ -128,3 +128,23 @@ section {
         width: 33%;
     }
 }
+
+@media (max-width: 420px) {
+    .restaurants-wrapper {
+        padding: 0;
+    }
+    .restaurants-wrapper.style2>li {
+        width: 50%;
+    }
+}
+
+.fixed-bg {
+    background-image: url("/media/parallax1.jpg");
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    left: 0;
+    top: 0;
+    background-position: center;
+}

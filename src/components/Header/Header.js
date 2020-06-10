@@ -42,8 +42,8 @@ const Header = () => (
                 <input className="search_input" type="text" name="" placeholder="Search..." />
                 <a href="#" className="search_icon"><FontAwesomeIcon icon={faSearch} /></a>
             </div>
-            <div>
-                <Link to="/order" className = 'shoppingbag' >
+            <div className='shoppingbag'>
+                <Link to="/order" >
                 <FontAwesomeIcon icon={faShoppingBag} />
                 <span> 2   </span>
                 </Link>

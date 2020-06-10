@@ -1,6 +1,6 @@
 .container {
     padding: 0px;
-    max-width: 1240px;
+    max-width: 1200px;
 }
 
 .title-wrapper {
@@ -22,11 +22,14 @@
     text-transform: uppercase;
 }
 
+
 /* temporary added for account page*/
-.link{
+
+.link {
     color: black;
 }
-.link:hover{
+
+.link:hover {
     color: red;
     text-decoration: underline;
 }
