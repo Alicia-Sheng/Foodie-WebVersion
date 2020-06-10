@@ -14,7 +14,7 @@ const data = [{
     {
         "id": 2,
         "name": "Sausage, Egg & Cheese on Croissant",
-        "location": "Dunckin Donuts",
+        "location": "Dunkin Donuts",
         "img": {
             "src": "media/SausageEggCheese.jpg",
             "alt": "Sausage, Egg & Cheese on Croissant"
@@ -183,7 +183,7 @@ const data = [{
     {
         "id": 15,
         "name": "Frozen Chocolate",
-        "location": "Dunckin Donuts",
+        "location": "Dunkin Donuts",
         "img": {
             "src": "media/FrozenChocolate.jpg",
             "alt": "Frozen Chocolate"
@@ -196,7 +196,7 @@ const data = [{
     {
         "id": 16,
         "name": "Coolatta",
-        "location": "Dunckin Donuts",
+        "location": "Dunkin Donuts",
         "img": {
             "src": "media/Coolatta.jpg",
             "alt": "Coolatta"
@@ -209,7 +209,7 @@ const data = [{
     {
         "id": 17,
         "name": "Frozen Coffee",
-        "location": "Dunckin Donuts",
+        "location": "Dunkin Donuts",
         "img": {
             "src": "media/FrozenCoffee.jpg",
             "alt": "Frozen Coffee"

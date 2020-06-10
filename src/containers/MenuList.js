@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Menu from '../components/Menu/Menu';
+import MenuFood from '../components/MenuFood/MenuFood';
 
 import './MenuList.css'
 
@@ -11,7 +11,7 @@ function MenuList({data, dinHall}) {
       {data.map(food => {if (food.location===dinHall) {
           return (
           <div key={food.id}>
-            <Menu food={food} />
+            <MenuFood food={food} />
           </div>)}}
        )}
    </div >

@@ -33,7 +33,7 @@ const Header = () => (
                             <a className="nav-link" href="#">FOOD<span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item">
-                            <Link to="/restaurants" exact className="nav-link">BEVERAGE</Link>
+                            <Link to="/sherman" exact className="nav-link">BEVERAGE</Link>
                         </li>
                     </ul>
                 </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 import MenuList from '../../containers/MenuList'
 
-import foodData from '../../../assets/data' /*should have data from multiple restaurants*/
+import foodData from '../../../assets/data'
 
 import '../../style.css'
 
