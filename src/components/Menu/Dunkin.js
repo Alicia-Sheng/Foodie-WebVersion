@@ -8,16 +8,16 @@ import '../../style.css'
 
 function Dunkin() {
   return (
-    <div>
-
-      <div className="title-wrapper text-center">
-        <div className="title-inner">
-          <h2 itemProp="headline">Dunkin Donuts</h2>
+    <section>
+      <div className="block">
+        <div className="title-wrapper text-center">
+          <div className="title-inner">
+            <h2 itemProp="headline">Dunkin Donuts</h2>
+          </div>
         </div>
+        <MenuList data={foodData} dinHall="Dunkin Donuts" />
       </div>
-      <MenuList data={foodData} dinHall="Dunkin Donuts" />
-
-    </div>
+    </section>
   )
 }
 
