@@ -10,8 +10,9 @@ A React food ordering app , Foodie, designed to provide university students with
     - [What is Foodie](#what-is-foodie)
     - [Why is Foodie](#why-is-foodie)
   - [Features](#features)
-    - [For Food Providers](#for-food-providers)
-    - [For Customers](#for-customers)
+    - [Basic features](#basic-features)
+    - [Advanced Features](#advanced-features)
+    - [Features need help with](#features-need-help-with)
   - [Usage](#usage)
     - [Install](#install)
     - [Run](#run)
@@ -32,23 +33,43 @@ A food ordering app specifically designed for university students to order from 
 
 ## Features
 
-### For Food Providers
+### Basic features
 
-- Add food options
-- Receive orders
-- Edit daily recommendations
+- ***For Food Providers***
+
+  - Add food options
+  - Receive orders
   
-### For Customers
+- ***For Customers***
 
-- Browse food and beverage options
-  - View food details (image, description, price, etc.)
-  - Filter by restaurant, category, etc
-  - Rank by rating, price
-- Order meals and view order status
-- Manage user account, inlcuding user login, logout and register
-- Check the information (open time, location, etc) of restaurants on campus
-- Add comments and rate the food
-- Browse the comments added by other customers
+  - Browse food and beverage options
+    - View food details (image, description, price, etc.)
+    - Display by restaurant, category, etc
+  - Order meals
+  - Search meals or restaurants
+  - Manage user account, inlcuding user login, logout and register
+  - View restaurant information (open time, location, etc)
+  - Rate the food
+  - Browse the comments added by other customers
+
+### Advanced Features 
+
+- ***For Food Providers***
+
+  - Edit daily recommendations
+  
+- ***For Customers***
+
+  - Rankd food and beverage options by rating, price
+  - View order status
+  - See order history
+  - Add comments
+  - Browse the comments added by other customers
+
+### Features need help with
+
+- Add admin view / show different view to food providers
+- Server setup
 
 ## Usage
 
