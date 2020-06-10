@@ -22,12 +22,13 @@
 
 ## Features
 - Browse food and beverage options
-    - Filter by restaurants, categories, etc
-    - Rank by rating
+    - Filter by restaurant, category, etc
+    - Rank by rating, price
 - Order meals online
 - Check the information(open time, location, etc) of restaurants on campus
 - Daily recommendations
-- Browse comments from students or staffs of each food
+- Add comments and rate the food
+- Browse the comments added by others
 
 ## Usage
 - Users: Brandeis students, Brandeis restaurants, Brandeis faculty
