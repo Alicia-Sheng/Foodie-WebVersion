@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Header from './Header/Header'
 import MainContent from './MainContent'
-import restaurants from '../restaurants'
+import Sherman from './Menu/Sherman'
+import Stein from './Menu/Stein'
+import Dunkin from './Menu/Dunkin'
 import order from './Order/Order'
 import Account from '../Account'
 import Login from './Account/Login'
@@ -16,7 +18,9 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={MainContent} />
-          <Route exact path="/restaurants" component={restaurants} />
+          <Route exact path="/sherman" component={Sherman} />
+          <Route exact path="/stein" component={Stein} />
+          <Route exact path="/dunkin" component={Dunkin} />
           <Route exact path="/order" component={order} />
           <Route exact path="/account" component={Account} />
           <Route exact path="/account/login" component={Login} />
