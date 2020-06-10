@@ -20,40 +20,96 @@ const CardList = ({ data }) => {
         ))}
       </div> */}
 
-      <InfiniteCarousel
+      <div className='container'>
+        <div className='row'>
+          <div className="col-md-12 col-sm-12 col-lg-12">
+            <div className="title-wrapper text-center">
+              <div className="title-inner">
+                <h2 itemProp="headline">Food you might like</h2>
+              </div>
+            </div>
 
-        breakpoints={[
-          {
-            breakpoint: 500,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-            },
-          },
-        ]}
-        dots={true}
-        showSides={true}
-        sidesOpacity={.5}
-        sideSize={.1}
-        slidesToScroll={3}
-        slidesToShow={3}
-        scrollOnDevice={true}
-        className='row'>
-        {data.filter(data => data.category === "food").map(food => (
-          <div
-            key={food.id}>
-            <Card food={food} />
+            <InfiniteCarousel
+
+              breakpoints={[
+                {
+                  breakpoint: 500,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                  },
+                },
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                  },
+                },
+              ]}
+              dots={true}
+              showSides={true}
+              sidesOpacity={.5}
+              sideSize={.1}
+              slidesToScroll={3}
+              slidesToShow={3}
+              scrollOnDevice={true}
+              className='row'>
+              {data.filter(data => data.category === "food").map(food => (
+                <div
+                  key={food.id}>
+                  <Card food={food} />
+                </div>
+              ))}
+
+            </InfiniteCarousel>
           </div>
-        ))}
-        
-      </InfiniteCarousel>
+        </div>
+        <div className='row'>
+          <div className="col-md-12 col-sm-12 col-lg-12">
+            <div className="title-wrapper text-center">
+              <div className="title-inner">
+                <h2 itemProp="headline">Drink you might like</h2>
+              </div>
+            </div>
+
+            <InfiniteCarousel
+
+              breakpoints={[
+                {
+                  breakpoint: 500,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                  },
+                },
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                  },
+                },
+              ]}
+              dots={true}
+              showSides={true}
+              sidesOpacity={.5}
+              sideSize={.1}
+              slidesToScroll={3}
+              slidesToShow={3}
+              scrollOnDevice={true}
+              className='row'>
+              {data.filter(data => data.category === "drink").map(food => (
+                <div
+                  key={food.id}>
+                  <Card food={food} />
+                </div>
+              ))}
+
+            </InfiniteCarousel>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
