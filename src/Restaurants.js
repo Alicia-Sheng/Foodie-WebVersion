@@ -1,6 +1,6 @@
 import React from 'react'
 
-import MenuFoodList from './containers/MenuFoodList'
+import MenuList from './containers/MenuList'
 
 import steinFood from '../assets/stein' /*should have data from multiple restaurants*/
 
@@ -15,7 +15,7 @@ function Restaurants() {
           <h2 itemProp="headline">The Stein</h2>
         </div>
       </div>
-      <MenuFoodList data={steinFood} />
+      <MenuList data={steinFood} />
 
     </div>
   )
