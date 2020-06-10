@@ -60,7 +60,7 @@ A food ordering app specifically designed for university students to order from 
   
 - ***For Customers***
 
-  - Rankd food and beverage options by rating, price
+  - Rank food and beverage options by rating, price
   - View order status
   - See order history
   - Add comments
