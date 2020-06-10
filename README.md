@@ -16,16 +16,23 @@
     - [This is a program used for helping Brandeis students order food during COVID-19 period.](#this-is-a-program-used-for-helping-brandeis-students-order-food-during-covid-19-period)
 
 ## Background
-- People are asked to keep social distancing during COVI-19
+- People are asked to keep social distancing during COVID-19 period
 - Current food delivery app does not cover the School service
 - Thus, a app specifically designed for Brandeis students can help students to order food more conveniently online
 
 ## Features
-- Browse food and beverage options
-- Order meals online
-- Check the information(open time, location, etc) of restaurants on campus
-- Daily recommendations
-- Browse comments from students or staffs of each food
+- **For Food Providers**
+    - Add food options
+    - Receive orders
+    - Edit daily recommendations
+- **For Customers**
+    - Browse food and beverage options
+        - Filter by restaurant, category, etc
+        - Rank by rating, price
+    - Order meals online
+    - Check the information(open time, location, etc) of restaurants on campus
+    - Add comments and rate the food
+    - Browse the comments added by other customers
 
 ## Usage
 - Users: Brandeis students, Brandeis restaurants, Brandeis faculty
