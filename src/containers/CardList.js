@@ -77,14 +77,13 @@ const CardList = ({ data }) => {
 
               breakpoints={[
                 {
-                  breakpoint: 500,
+                  breakpoint: 600,
                   settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                   },
-                },
-                {
-                  breakpoint: 768,
+                }, {
+                  breakpoint: 868,
                   settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,

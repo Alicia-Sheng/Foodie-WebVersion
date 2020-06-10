@@ -1,3 +1,7 @@
+input:focus {
+    outline: none;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .shopping_cart_area {
         margin-top: 80px;
@@ -219,7 +223,7 @@
 }
 
 .coupon_inner a:hover {
-    color: #40A944;
+    color: #e74c3c;
 }
 
 .coupon_code {
@@ -440,34 +444,23 @@
 .mor-ingredients {
     float: left;
     width: 100%;
-    padding-left: 25px;
     margin-top: 5px;
     position: relative;
-}
-
-.mor-ingredients>a {
-    display: inline-block;
-    border-bottom: 1px solid;
-    font-size: 12px;
-    line-height: 12px;
-}
-
-.mor-ingredients:hover .ingradient-list {
-    opacity: 1;
-    visibility: visible
 }
 
 .qty-wrap {
     margin-top: 20px;
 }
 
-.qty-wrap .input-group {
-    max-width: 200px;
+.qty-wrap.input-group {
+    max-width: 100px;
+    float: left;
 }
 
-.qty-wrap .qty.form-control,
-.qty-wrap .input-group-btn button {
-    height: 45px;
+.qty-wrap .form-control,
+.qty-wrap .input-group-btn {
+    height: 35px;
+    width: 30px;
     text-align: center;
     font-family: Poppins;
     font-weight: 700;

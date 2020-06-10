@@ -6,12 +6,15 @@ class Order extends Component {
     constructor(props) {
         super(props);
 
-        // this.state = {
-        //     orderList: []
-        // };
+        this.state = {
+            orderList: [
+                { id: 1, name: "Caesar Salad", num: 1, price: 6.99, checked: false }
+            ]
+        };
 
         // this.handleChange = this.handleChange.bind(this);
     }
+
 
     // handleChange(event) {
     //     this.setState({
@@ -19,6 +22,32 @@ class Order extends Component {
     //     });
     // }
 
+    getTotal() {
+        let list = this.state.orderList;
+        let total = 0;
+        list.forEach((v) => {
+            if (v.checked) {
+                total += (v.num * v.price);
+            }
+        });
+        return total
+    }
+
+    incrementQty(n) {
+        let list = this.state.orderList;
+        list[n].num++;
+        this.setState({ orderList: list })
+    }
+
+    decrementQty(n) {
+        let list = this.state.orderList;
+        list[n].num--;
+        if (list[n].num <= 0) {
+            alert("Item removed");
+            list[n].checked = false;
+        }
+        this.setState({ orderList: list })
+    }
 
     render() {
         return (
@@ -30,51 +59,57 @@ class Order extends Component {
                                 <div className="container">
                                     <form action="#">
                                         <div className="row">
-                                            <div className="col-12">
-                                                <div className="table_desc">
-                                                    <div className="cart_page table-responsive">
-                                                        <table>
-                                                            <thead>
-                                                                <tr>
-                                                                    <th className="product_remove">Delete</th>
-                                                                    <th className="product_thumb">Image</th>
-                                                                    <th className="product_name">Product</th>
-                                                                    <th className="product-price">Price</th>
-                                                                    <th className="product_quantity">Quantity</th>
-                                                                    <th className="product_total">Total</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td className="product_remove"><a href="#"><i className="fa fa-trash-o"></i></a></td>
-                                                                    <td className="product_thumb"><a href="#"><img src="" alt="" /></a></td>
-                                                                    <td className="product_name"><a href="#">Caesar Salad</a></td>
-                                                                    <td className="product-price">$6.69</td>
-                                                                    <td className="product_quantity"><label>Quantity</label> <input min="1" max="100" value="1" type="number" /></td>
-                                                                    <td className="product_total">$6.69</td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                    <td className="product_remove"><a href="#"><i className="fa fa-trash-o"></i></a></td>
-                                                                    <td className="product_thumb"><a href="#"><img src="" alt="" /></a></td>
-                                                                    <td className="product_name"><a href="#">Beef Spring Rolls</a></td>
-                                                                    <td className="product-price">$6.69</td>
-                                                                    <td className="product_quantity"><label>Quantity</label> <input min="1" max="100" value="1" type="number" /></td>
-                                                                    <td className="product_total">$6.69</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td className="product_remove"><a href="#"><i className="fa fa-trash-o"></i></a></td>
-                                                                    <td className="product_thumb"><a href="#"><img src="" alt="" /></a></td>
-                                                                    <td className="product_name"><a href="#">{"General Tso's Chicken"}</a></td>
-                                                                    <td className="product-price">$13.69</td>
-                                                                    <td className="product_quantity"><label>Quantity</label> <input min="1" max="100" value="1" type="number" /></td>
-                                                                    <td className="product_total">$13.69</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                    <div className="cart_submit">
-                                                        <button type="submit">update cart</button>
+                                            <div className="col-md-12 col-sm-12 col-lg-12">
+                                                <div className="order-wrapper">
+                                                    <div className="order-inner gradient-brd">
+                                                        <h4 itemProp="headline">Your Order</h4>
+                                                        <div className="order-list-wrapper">
+                                                            <ul className="order-list-inner">
+                                                                {
+                                                                    this.state.orderList.map((v, i) => {
+                                                                        return <li
+                                                                        key={i}>
+                                                                            {/*<span className={(v.checked?"active":"")+" d1"} onClick={this.tg.bind(this,i)}></span>*/}
+                                                                            <div className="dish-name">
+                                                                                <h6 itemProp="headline">{v.name}</h6> <span className="price">${v.price}</span>
+                                                                            </div>
+                                                                            <div className="dish-ingredients">
+                                                                                <span>The Stein</span>
+                                                                            </div>
+                                                                            <div className="mor-ingredients">
+                                                                                <div className="qty-wrap input-group">
+                                                                                    <input className="input-group-btn" type="button" value="-" onClick={this.decrementQty.bind(this, i)} />
+                                                                                    <input className="form-control" type="text" value={v.num} style={{ width: "20px" }} />
+                                                                                    <input className="input-group-btn" type="button" value="+" onClick={this.incrementQty.bind(this, i)} />
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    })
+                                                                }
+                                                                <li>
+                                                                    <div className="dish-name">
+                                                                        <h6 itemProp="headline">Chicken Tandoori Special</h6> <span className="price">$85.00</span>
+                                                                    </div>
+                                                                    <div className="dish-ingredients">
+                                                                        <span>The Stein</span>
+                                                                    </div>
+                                                                    <div className="mor-ingredients">
+                                                                        <div className="qty-wrap">
+                                                                            <input className="qty" type="text" value="1" />
+                                                                            <button>-</button> 1 <button>+</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                            <ul className="order-total">
+                                                                <li><span>SubTotal</span> <i>${this.getTotal()}</i></li>
+                                                                <li><span>Tax</span> <i>$12</i></li>
+                                                            </ul>
+                                                            <ul className="order-method brd-rd2 red-bg">
+                                                                <li><span>Total</span> <span className="price">$340</span></li>
+                                                                <li><a className="brd-rd2" href="#" title="" itemProp="url">CONFIRM ORDER</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -118,64 +153,6 @@ class Order extends Component {
                                             </div>
                                         </div>
                                     </form>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-md-12 col-sm-12 col-lg-12">
-                                    <div className="order-wrapper">
-                                        <div className="order-inner gradient-brd">
-                                            <h4 itemProp="headline">Your Order</h4>
-                                            <div className="order-list-wrapper">
-                                                <ul className="order-list-inner">
-                                                    <li>
-                                                        <div className="dish-name">
-                                                            <h6 itemProp="headline">Chicken Tandoori Special</h6> <span className="price">$85.00</span>
-                                                        </div>
-                                                        <div className="dish-ingredients">
-                                                            <span>The Stein</span>
-                                                        </div>
-                                                        <div className="mor-ingredients">
-                                                            <div className="qty-wrap">
-                                                                <input className="qty" type="text" value="1" />
-                                                                <input min="1" max="100" value="1" type="number" />
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div className="dish-name">
-                                                            <h6 itemProp="headline">Chicken Tandoori Special</h6> <span className="price">$90.00</span>
-                                                        </div>
-                                                        <div className="dish-ingredients">
-                                                            <span className="check-box"><input type="checkbox" id="checkbox2-1" /><label htmlFor="checkbox2-1"><span>Drink</span> <i>$10</i></label></span>
-                                                            <span className="check-box"><input type="checkbox" id="checkbox2-2" /><label htmlFor="checkbox2-2"><span>Butter</span> <i>$20</i></label></span>
-                                                        </div>
-                                                        <div className="mor-ingredients">
-                                                            <a className="red-clr" href="#" title="" itemProp="url">Edit</a>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div className="dish-name">
-                                                            <h6 itemProp="headline">Chicken Tandoori Special</h6> <span className="price">$100.00</span>
-                                                        </div>
-                                                        <div className="dish-ingredients">
-                                                            <span className="check-box"><input type="checkbox" id="checkbox3-1" /><label htmlFor="checkbox3-1"><span>Drink</span> <i>$30</i></label></span>
-                                                        </div>
-                                                        <div className="mor-ingredients">
-                                                            <a className="red-clr" href="#" title="" itemProp="url">Edit</a>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                                <ul className="order-total">
-                                                    <li><span>SubTotal</span> <i>$158</i></li>
-                                                    <li><span>Tax</span> <i>$12</i></li>
-                                                </ul>
-                                                <ul className="order-method brd-rd2 red-bg">
-                                                    <li><span>Total</span> <span className="price">$340</span></li>
-                                                    <li><a className="brd-rd2" href="#" title="" itemProp="url">CONFIRM ORDER</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
