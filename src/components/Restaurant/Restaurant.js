@@ -5,11 +5,12 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Restaurant = ({restaurant}) => {
+    const link = "/"+restaurant.link
     return (
 
     <div className="top-restaurant">
         <a className="brd-rd50" href="#" title={restaurant.name} itemProp="url">
-            <Link to="/dunkin">
+            <Link to={link}>
               <img src={restaurant.img.src} alt={restaurant.img.alt} itemProp="image"/>
             </Link>
         </a>
@@ -19,7 +20,7 @@ const Restaurant = ({restaurant}) => {
 };
 
 Restaurant.propTypes = {
-    restaurant: PropTypes.object.isRequired
+    restaurant: PropTypes.object.isRequired,
 }
 
 export default Restaurant;

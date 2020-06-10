@@ -21,7 +21,7 @@ const RestaurantList = ({ data }) => {
                     <ul className="restaurants-wrapper style2">
                       {data.map(restaurant => (
                         <li key={restaurant.id} className="wow bounceIn" data-wow-delay="0.2s">
-                          <Restaurant restaurant={restaurant} />
+                          <Restaurant restaurant={restaurant}/>
                         </li>
                       ))}
                     </ul>
