@@ -21,7 +21,9 @@
 - Thus, a app specifically designed for Brandeis students can help students to order food more conveniently online. 
 
 ## Features
-
+- Browse food and beverage options
+- Order meals
+- Check the information(open time, location, etc) of restaurants
 
 ## Usage
 - Users: Brandeis students, Brandeis restaurants, Brandeis faculty
