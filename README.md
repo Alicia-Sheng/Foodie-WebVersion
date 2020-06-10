@@ -12,6 +12,8 @@
   - [Demo](#demo)
   - [Contributors](#contributors)
   - [License](#license)
+- [Brammy](#brammy)
+    - [This is a program used for helping Brandeis students order food during COVID-19 period.](#this-is-a-program-used-for-helping-brandeis-students-order-food-during-covid-19-period)
 
 ## Background
 
@@ -35,3 +37,8 @@
 ## License
 
 [MIT](LICENSE) © Richard Littauer
+
+
+# Brammy
+  
+### This is a program used for helping Brandeis students order food during COVID-19 period.
