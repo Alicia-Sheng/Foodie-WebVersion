@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Login = () => {
   return (
-      <div className='container-fluid'>
+    <section>
+      <div className="block">
         <div className='container'>
           <div className='login-form'>
             <h1>Login</h1>
@@ -24,6 +25,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+    </section>
   )
 }
 
