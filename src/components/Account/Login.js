@@ -25,23 +25,6 @@ const Login = () => {
         </div>
       </div>
   )
-  // return (
-  //   <>
-  //     <div className='container-fluid'>
-  //       <div className='container'>
-  //         <div className='row'>
-  //           <div className="col-md-12 col-sm-12 col-lg-12">
-  //             <div className="title-wrapper text-center">
-  //               <div className="title-inner">
-  //                 <h2 itemProp="headline">LOGIN</h2>
-  //               </div>
-  //             </div>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     </div>
-  //   </>
-  // )
 }
 
 export default Login;
