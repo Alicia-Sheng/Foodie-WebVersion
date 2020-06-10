@@ -51,7 +51,7 @@ class Order extends Component {
                                                         <td className="product_total">$6.69</td>
                                                     </tr>
 
-                                                        <tr>
+                                                    <tr>
                                                         <td className="product_remove"><a href="#"><i className="fa fa-trash-o"></i></a></td>
                                                         <td className="product_thumb"><a href="#"><img src="" alt=""/></a></td>
                                                         <td className="product_name"><a href="#">Beef Spring Rolls</a></td>
@@ -59,6 +59,7 @@ class Order extends Component {
                                                         <td className="product_quantity"><label>Quantity</label> <input min="1" max="100" value="1" type="number"/></td>
                                                         <td className="product_total">$6.69</td>
                                                     </tr>
+
                                                     <tr>
                                                         <td className="product_remove"><a href="#"><i className="fa fa-trash-o"></i></a></td>
                                                         <td className="product_thumb"><a href="#"><img src="" alt=""/></a></td>
@@ -77,46 +78,46 @@ class Order extends Component {
                                 </div>
                             </div>
                             <div className="coupon_area">
-                    <div className="row">
-                        <div className="col-lg-6 col-md-6">
-                            <div className="coupon_code left">
-                                <h3>Coupon</h3>
-                                <div className="coupon_inner">   
-                                    <p>Enter your coupon code if you have one.</p>                                
-                                    <input placeholder="Coupon code" type="text"/>
-                                    <button type="submit">Apply coupon</button>
-                                </div>    
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-md-6">
-                            <div className="coupon_code right">
-                                <h3>Cart Totals</h3>
-                                <div className="coupon_inner">
-                                   <div className="cart_subtotal">
-                                       <p>Subtotal</p>
-                                       <p className="cart_amount">$27.07</p>
-                                   </div>
-                                   <div className="cart_subtotal ">
-                                       <p>Tax</p>
-                                       <p className="cart_amount"> $2.70</p>
-                                   </div>
-                                   <a href="#">Calculate Tax</a>
-
-                                   <div className="cart_subtotal">
-                                       <p>Total</p>
-                                       <p className="cart_amount">$29.77</p>
-                                   </div>
-                                   <div className="checkout_btn">
-                                       <a href="#">Proceed to Checkout</a>
-                                   </div>
+                              <div className="row">
+                                <div className="col-lg-6 col-md-6">
+                                  <div className="coupon_code left">
+                                    <h3>Coupon</h3>
+                                    <div className="coupon_inner">
+                                      <p>Enter your coupon code if you have one.</p>
+                                      <input placeholder="Coupon code" type="text"/>
+                                      <button type="submit">Apply coupon</button>
+                                    </div>
+                                  </div>
                                 </div>
-                            </div>
-                        </div>
+                                <div className="col-lg-6 col-md-6">
+                                  <div className="coupon_code right">
+                                    <h3>Cart Totals</h3>
+                                    <div className="coupon_inner">
+                                        <div className="cart_subtotal">
+                                          <p>Subtotal</p>
+                                          <p className="cart_amount">$27.07</p>
+                                        </div>
+                                        <div className="cart_subtotal ">
+                                          <p>Tax</p>
+                                          <p className="cart_amount"> $2.70</p>
+                                        </div>
+                                        <a href="#">Calculate Tax</a>
+
+                                        <div className="cart_subtotal">
+                                          <p>Total</p>
+                                          <p className="cart_amount">$29.77</p>
+                                        </div>
+                                        <div className="checkout_btn">
+                                          <a href="#">Proceed to Checkout</a>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                        </form>
                     </div>
                 </div>
-            </form>
-        </div>
-    </div>
                 <div className="col-md-4 col-sm-12 col-lg-4">
                     <div className="order-wrapper">
                         <div className="order-inner gradient-brd">
@@ -125,7 +126,7 @@ class Order extends Component {
                                 <ul className="order-list-inner">
                                     <li>
                                         <div className="dish-name">
-                                            <i>.1</i> <h6 itemProp="headline">Chicken Tandoori Special</h6> <span className="price">$85.00</span>
+                                            <i>1</i> <h6 itemProp="headline">Chicken Tandoori Special</h6> <span className="price">$85.00</span>
                                         </div>
                                         <div className="dish-ingredients">
                                             <span className="check-box"><input type="checkbox" id="checkbox1-1" /><label htmlFor="checkbox1-1"><span>Drink</span> <i>$12</i></label></span>
@@ -137,7 +138,7 @@ class Order extends Component {
                                     </li>
                                     <li>
                                         <div className="dish-name">
-                                            <i>.2</i> <h6 itemProp="headline">Chicken Tandoori Special</h6> <span className="price">$90.00</span>
+                                            <i>2</i> <h6 itemProp="headline">Chicken Tandoori Special</h6> <span className="price">$90.00</span>
                                         </div>
                                         <div className="dish-ingredients">
                                             <span className="check-box"><input type="checkbox" id="checkbox2-1" /><label htmlFor="checkbox2-1"><span>Drink</span> <i>$10</i></label></span>
@@ -149,7 +150,7 @@ class Order extends Component {
                                     </li>
                                     <li>
                                         <div className="dish-name">
-                                            <i>.3</i> <h6 itemProp="headline">Chicken Tandoori Special</h6> <span className="price">$100.00</span>
+                                            <i>3</i> <h6 itemProp="headline">Chicken Tandoori Special</h6> <span className="price">$100.00</span>
                                         </div>
                                         <div className="dish-ingredients">
                                             <span className="check-box"><input type="checkbox" id="checkbox3-1" /><label htmlFor="checkbox3-1"><span>Drink</span> <i>$30</i></label></span>

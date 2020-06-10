@@ -3,24 +3,24 @@ import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './Header.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faShoppingBag} from '@fortawesome/free-solid-svg-icons';
-import { faFacebookSquare, faTwitter, faGoogle } from "@fortawesome/free-brands-svg-icons"
+import { faSearch, faShoppingBag } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookSquare, faTwitter, faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 const Header = () => (
     <header className="stick">
         <div className="topbar hidden">
             <div className="container">
                 <div className="topbar-register">
-                    <Link to="/account/login" className="log-popup-btn" title="Login" itemProp="url">LOGIN</Link> / <Link to="/account/register" className="sign-popup-btn" title="Register" itemProp="url">REGISTER</Link>
+                    <Link to="/account/login" className="log-popup-btn" title="Login" itemProp="url">LOGIN </Link> / <Link to="/account/register" className="sign-popup-btn" title="Register" itemProp="url"> REGISTER</Link>
                 </div>
-                <div className="social1">
+                <div className="social-media-login">
                     <a href="#" title="Facebook" itemProp="url" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} /></a>
                     <a href="#" title="Twitter" itemProp="url" target="_blank"><FontAwesomeIcon icon={faTwitter} /></a>
                     <a href="#" title="Google Plus" itemProp="url" target="_blank"><FontAwesomeIcon icon={faGoogle} /></a>
                 </div>
             </div>
         </div>
-    <nav id="mainNavbar" className="navbar navbar-dark navbar-expand-md sticky-top">
+        <nav id="mainNavbar" className="navbar navbar-dark navbar-expand-md sticky-top">
         <div className="container">
             <Link className="navbar-brand js-scroll-trigger hidden" to="/">FOODIE</Link>
             <div>
@@ -48,7 +48,6 @@ const Header = () => (
                 <span> 2   </span>
                 </Link>
             </div>
-
         </div>
     </nav>
 </header>
