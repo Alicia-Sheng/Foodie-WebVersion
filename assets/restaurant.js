@@ -46,6 +46,7 @@ const restaurant = [{
     {
         "id": 6,
         "name": "Dunkin Donuts",
+        "link": "dunkin",
         "img": {
             "src": "media/logo/dunkin-donuts.png",
             "alt": "dunkin-donuts"

@@ -1,6 +1,6 @@
 # CS153a-FinalProject
 
-A React food ordering app , Foodie, designed to provide university students with quick and easy food ordering from restaurants and cafes on campus.
+A React food ordering app, Foodie, designed to provide university students with quick and easy food ordering from restaurants and cafes on campus.
 
 ## Table of Contents
 
@@ -47,7 +47,7 @@ A food ordering app specifically designed for university students to order from 
     - Display by restaurant, category, etc
   - Order meals
   - Search meals or restaurants
-  - Manage user account, inlcuding user login, logout and register
+  - Manage user account, including user login, logout and register
   - View restaurant information (open time, location, etc)
   - Rate the food
   - Browse the comments added by other customers
@@ -60,7 +60,7 @@ A food ordering app specifically designed for university students to order from 
   
 - ***For Customers***
 
-  - Rankd food and beverage options by rating, price
+  - Rank food and beverage options by rating, price
   - View order status
   - See order history
   - Add comments
