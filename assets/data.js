@@ -7,9 +7,9 @@ const data = [{
             "alt": "Caesar Salad"
         },
         "desc": "Crisp Romaine lettuce and Garlic Croutons tossed in Creamy Caesar",
-        "amount": 10000,
         "price": 6.69,
-        "rating": 5.0
+        "rating": 5.0,
+        "category": "food"
     },
     {
         "id": 2,
@@ -20,9 +20,9 @@ const data = [{
             "alt": "Sausage, Egg & Cheese on Croissant"
         },
         "desc": "A tasty sandwich stacked with egg, American cheese and irresistible sausage",
-        "amount": 10000,
         "price": 5.89,
-        "rating": 5.0
+        "rating": 5.0,
+        "category": "food"
     },
     {
         "id": 3,
@@ -33,9 +33,9 @@ const data = [{
             "alt": "Cheese Quesadilla"
         },
         "desc": "A Mexican dish and type of taco, consisting of a tortilla that is filled primarily with cheese",
-        "amount": 10000,
         "price": 8.99,
-        "rating": 5.0
+        "rating": 5.0,
+        "category": "food"
     },
     {
         "id": 4,
@@ -46,9 +46,9 @@ const data = [{
             "alt": "Beef Spring Rolls"
         },
         "desc": "Carrots and cilantro add a crisp, refreshing taste to stir-fried Omaha Steaks Top Sirloin Steaks",
-        "amount": 10000,
         "price": 11.39,
-        "rating": 5.0
+        "rating": 5.0,
+        "category": "food"
     },
     {
         "id": 5,
@@ -59,9 +59,9 @@ const data = [{
             "alt": "General Tso's Chicken"
         },
         "desc": "A popular Chinese entree made with fried chicken pieces coated in a sweet and slightly spicy sauce",
-        "amount": 10000,
         "price": 13.69,
-        "rating": 5.0
+        "rating": 5.0,
+        "category": "food"
     },
     {
         "id": 6,
@@ -72,9 +72,9 @@ const data = [{
             "alt": "Basket of Fries"
         },
         "desc": "Traditional Fries or Fried Zucchini Sticks with Chipotle Aioli",
-        "amount": 10000,
         "price": 3.19,
-        "rating": 5.0
+        "rating": 5.0,
+        "category": "food"
     },
     {
         "id": 7,
@@ -85,9 +85,9 @@ const data = [{
             "alt": "Loaded Nachos"
         },
         "desc": "Tortilla Chips Covered in Melted Chihuahua Cheese, Olives, Tomatoes, and Fresh Cilantro with sour cream and salsa",
-        "amount": 10000,
         "price": 6.99,
-        "rating": 5.0
+        "rating": 5.0,
+        "category": "food"
     },
     {
         "id": 8,
@@ -98,9 +98,9 @@ const data = [{
             "alt": "Chicken Tenders"
         },
         "desc": "Plain, BBQ or Buffalo Served with Carrot Sticks",
-        "amount": 10000,
         "price": 8.29,
-        "rating": 5.0
+        "rating": 5.0,
+        "category": "food"
     },
     {
         "id": 9,
@@ -111,9 +111,9 @@ const data = [{
             "alt": "Wings"
         },
         "desc": "Your choice of BBQ, Buffalo or Garlic Parmesan Sauce served with Carrot sticks",
-        "amount": 10000,
         "price": 10.29,
-        "rating": 5.0
+        "rating": 5.0,
+        "category": "food"
     },
     {
         "id": 10,
@@ -124,9 +124,9 @@ const data = [{
             "alt": "Harvest Salad"
         },
         "desc": "Crisp Romaine Lettuce. Chopped Applem Dried Cranberries and Red Onion",
-        "amount": 10000,
         "price": 7.39,
-        "rating": 5.0
+        "rating": 5.0,
+        "category": "food"
     },
     {
         "id": 11,
@@ -137,9 +137,9 @@ const data = [{
             "alt": "Asian Quinoa Salad"
         },
         "desc": "Quinoa and Baby Kale Tossed with Shredded Red Cabbage, Carrots, Green Onions and Sesame Seeds, Served with House-Made Asian Hney Vinaigrette",
-        "amount": 10000,
         "price": 6.29,
-        "rating": 5.0
+        "rating": 5.0,
+        "category": "food"
     },
     {
         "id": 12,
@@ -150,9 +150,9 @@ const data = [{
             "alt": "Cheese Pizza"
         },
         "desc": "Slice of Cheese Pizza",
-        "amount": 10000,
         "price": 11.49,
-        "rating": 5.0
+        "rating": 5.0,
+        "category": "food"
     },
     {
         "id": 13,
@@ -163,9 +163,9 @@ const data = [{
             "alt": "Angus Burger"
         },
         "desc": "Served on a toasted brioche bun with lettuce, tomato and Onion",
-        "amount": 10000,
         "price": 8.49,
-        "rating": 5.0
+        "rating": 5.0,
+        "category": "food"
     },
     {
         "id": 14,
@@ -176,9 +176,9 @@ const data = [{
             "alt": "The Impossible Burger Burger"
         },
         "desc": "Plant-Based Vegan Burger served on a toasted Brioche Bun with lettuce tomato and onion",
-        "amount": 10000,
         "price": 12.49,
-        "rating": 5.0
+        "rating": 5.0,
+        "category": "food"
     },
     {
         "id": 15,
@@ -189,9 +189,9 @@ const data = [{
             "alt": "Frozen Chocolate"
         },
         "desc": "Our Frozen Chocolate is an indulgent treat, made with your choice of flavor and topped with whipped cream",
-        "amount": 10000,
         "price": 4.99,
-        "rating": 5.0
+        "rating": 5.0,
+        "category": "drink"
     },
     {
         "id": 16,
@@ -202,9 +202,9 @@ const data = [{
             "alt": "Coolatta"
         },
         "desc": "Fun, refreshing flavors that are sure to make you smile",
-        "amount": 10000,
         "price": 3.99,
-        "rating": 5.0
+        "rating": 5.0,
+        "category": "drink"
     },
     {
         "id": 17,
@@ -215,48 +215,48 @@ const data = [{
             "alt": "Frozen Coffee"
         },
         "desc": "Our NEW energizing Frozen Coffee is smooth, creamy and full of real Dunkin’® flavor—making it the perfect way to cool off",
-        "amount": 10000,
         "price": 3.99,
-        "rating": 5.0
+        "rating": 5.0,
+        "category": "drink"
     },
     {
-      "id": 18,
-      "name": "Coke",
-      "location": "The Stein",
-      "img": {
-          "src": "media/Coke.jpg",
-          "alt": "Coke"
-      },
-      "desc": "Classic, sweet coke. Free with a main course.",
-      "amount": 10000,
-      "price": 0.0,
-      "rating": 5.0
+        "id": 18,
+        "name": "Coke",
+        "location": "The Stein",
+        "img": {
+            "src": "media/Coke.jpg",
+            "alt": "Coke"
+        },
+        "desc": "Classic, sweet coke. Free with a main course.",
+        "price": 0.0,
+        "rating": 5.0,
+        "category": "drink"
     },
     {
-      "id": 19,
-      "name": "Ginger Ale",
-      "location": "The Stein",
-      "img": {
-          "src": "media/GingerAle.jpg",
-          "alt": "Ginger Ale"
-      },
-      "desc": " A popular carbonated beverage made by flavoring soft drink with ginger. Free with a main course.",
-      "amount": 10000,
-      "price": 0.0,
-      "rating": 5.0
+        "id": 19,
+        "name": "Ginger Ale",
+        "location": "The Stein",
+        "img": {
+            "src": "media/GingerAle.jpg",
+            "alt": "Ginger Ale"
+        },
+        "desc": " A popular carbonated beverage made by flavoring soft drink with ginger. Free with a main course.",
+        "price": 0.0,
+        "rating": 5.0,
+        "category": "drink"
     },
     {
-      "id": 20,
-      "name": "Lemonade",
-      "location": "The Stein",
-      "img": {
-          "src": "media/LemonNade.jpg",
-          "alt": "Lemonade"
-      },
-      "desc": "Water with Lemon inside. Free with a main course.",
-      "amount": 10000,
-      "price": 0.0,
-      "rating": 5.0
+        "id": 20,
+        "name": "Lemonade",
+        "location": "The Stein",
+        "img": {
+            "src": "media/Lemonade.jpg",
+            "alt": "Lemonade"
+        },
+        "desc": "Water with Lemon inside. Free with a main course.",
+        "price": 0.0,
+        "rating": 5.0,
+        "category": "drink"
     }
 ]
 

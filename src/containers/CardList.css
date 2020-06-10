@@ -133,3 +133,60 @@ a:active {
     -o-text-decoration: none;
     text-decoration: none;
 }
+
+
+/*===== Top Restaurants Carousel Style 2 =====*/
+
+.top-restaurant-carousel2 {
+    float: left;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.top-restaurant-item {
+    float: left;
+    width: 100%;
+}
+
+.top-restaurant-item>a {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 0 40px;
+    border: 1px solid #f1f1f1;
+    margin: 0 -2px;
+    min-height: 180px;
+    line-height: 180px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+}
+
+.top-restaurant-item>a img {
+    width: auto !important;
+    display: inline-block !important;
+}
+
+.top-restaurant-carousel2 .owl-stage-outer {
+    padding: 0 2px;
+}
+
+.top-restaurant-carousel2 .owl-nav {
+    position: absolute;
+    left: -50px;
+    right: -50px;
+    top: 50%;
+}
+
+.top-restaurant-carousel2 .owl-nav>div {
+    position: absolute;
+    color: #c53332;
+    font-size: 20px;
+}
+
+.top-restaurant-carousel2 .owl-nav>div.owl-prev {
+    left: 0;
+}
+
+.top-restaurant-carousel2 .owl-nav>div.owl-next {
+    right: 0;
+}
