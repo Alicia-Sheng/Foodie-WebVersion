@@ -13,7 +13,7 @@ const Header = () => (
                 <div className="topbar-register">
                     <Link to="/account/login" className="log-popup-btn" title="Login" itemProp="url">LOGIN </Link> / <Link to="/account/register" className="sign-popup-btn" title="Register" itemProp="url"> REGISTER</Link>
                 </div>
-                <div className="social-media-login">
+                <div div className="social1">
                     <a href="#" title="Facebook" itemProp="url" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} /></a>
                     <a href="#" title="Twitter" itemProp="url" target="_blank"><FontAwesomeIcon icon={faTwitter} /></a>
                     <a href="#" title="Google Plus" itemProp="url" target="_blank"><FontAwesomeIcon icon={faGoogle} /></a>
