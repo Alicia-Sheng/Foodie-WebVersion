@@ -5,20 +5,22 @@ import Menu from '../components/Menu/Menu';
 
 import './MenuList.css'
 
-function MenuList({data}) {
+function MenuList({data, dinHall}) {
   return (
     <div>
-      {data.map(food => (
+      {data.map(food => {if (food.location===dinHall) {
+          return (
           <div key={food.id}>
             <Menu food={food} />
-          </div>
-       ))}
+          </div>)}}
+       )}
    </div >
  )
 }
 
 MenuList.propTypes = {
     data: PropTypes.array.isRequired,
+    dinHall: PropTypes.array.isRequired,
 };
 
 
