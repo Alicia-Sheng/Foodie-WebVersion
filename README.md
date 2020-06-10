@@ -22,6 +22,8 @@
 
 ## Features
 - Browse food and beverage options
+    - Filter by restaurants, categories, etc
+    - Rank by rating
 - Order meals online
 - Check the information(open time, location, etc) of restaurants on campus
 - Daily recommendations
