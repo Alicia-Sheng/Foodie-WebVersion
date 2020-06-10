@@ -16,7 +16,7 @@
     - [This is a program used for helping Brandeis students order food during COVID-19 period.](#this-is-a-program-used-for-helping-brandeis-students-order-food-during-covid-19-period)
 
 ## Background
-- People are asked to keep social distancing during COVI-19
+- People are asked to keep social distancing during COVID-19 period
 - Current food delivery app does not cover the School service
 - Thus, a app specifically designed for Brandeis students can help students to order food more conveniently online
 
