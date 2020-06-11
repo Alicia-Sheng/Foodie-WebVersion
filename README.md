@@ -89,7 +89,8 @@ $ npm start
 
 ## Demo
 
-![Main Page 1](/media/screeshot1.png)
+![Main Page 1](https://github.com/Alicia-Sheng/CS153a-FinalProject/blob/master/media/screeshot/screenshot1.png)
+![Main Page 2](https://github.com/Alicia-Sheng/CS153a-FinalProject/blob/master/media/screeshot/screenshot2.png)
 1.  Nav Bar
     1.  Page Links
         * Users can use links to go to other pages
@@ -102,16 +103,21 @@ $ npm start
     5.  Login/Register
         * Go to the login/register page
 2.  Restaurant Menu
-    * 
+    * By clicking the logos, users can go to see the menu of each restaurant
 3.  Food Options
-    * 
-![Main Page 2](/media/screeshot2.png)
+    * Users can browse all food options here
 4.  Beverage Options
-    *
-![Restaurant Menu](/media/screeshot3.png)
+    * Users can browse all beverage options here
 
-![Shopping Cart](/media/screeshot4.png)
+![Restaurant Menu](https://github.com/Alicia-Sheng/CS153a-FinalProject/blob/master/media/screeshot/screenshot3.png)
 
+  * Food and beverage options are displayed by restaurant
+  * Will add restaurant information to this page
+
+![Shopping Cart](https://github.com/Alicia-Sheng/CS153a-FinalProject/blob/master/media/screeshot/screenshot4.png)
+
+  * Customers can view, add or remove items they put in the shopping cart.
+  * They can place an order here
 
 ## Contributors
 
