@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 
 import './Order.css'
 
-import foodData from '../../../assets/data'
-
 class Order extends Component {
     constructor(props) {
         super(props);
@@ -99,7 +97,7 @@ class Order extends Component {
 
                                                                     })
                                                                 }
-                                                                
+
                                                                 <li>
                                                                     <div className="dish-name">
                                                                         <h6 itemProp="headline">Chicken Tandoori Special</h6> <span className="price">$80.1</span>
