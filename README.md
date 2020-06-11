@@ -102,14 +102,14 @@ $ npm start
         * Users can use their social media account to login by clicking corresponding icons
     5.  Login/Register
         * Go to the login/register page
-2.  Restaurant Menu
-    * By clicking the logos, users can go to see the menu of each restaurant
+2.  Restaurant Pages
+    * By clicking the logos, users can jump to the restaurant infomation page
 3.  Food Options
     * Users can browse all food options here
 4.  Beverage Options
     * Users can browse all beverage options here
 
-![Restaurant Menu](https://github.com/Alicia-Sheng/CS153a-FinalProject/blob/master/media/screeshot/screenshot3.png)
+![Restaurant Page](https://github.com/Alicia-Sheng/CS153a-FinalProject/blob/master/media/screeshot/screenshot3.png)
 
   * Food and beverage options are displayed by restaurant
   * Will add restaurant information to this page
