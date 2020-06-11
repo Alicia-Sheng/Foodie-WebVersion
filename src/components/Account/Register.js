@@ -57,7 +57,7 @@ const Register = () => {
     <ul>
        {users.map(user => (
          <li key={user.id}>
-           {user.id} - {user.username} : {user.password}
+           User {user.id} - {user.username} : {user.password}
          </li>
        ))}
      </ul>

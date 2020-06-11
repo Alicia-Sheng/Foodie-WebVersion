@@ -82,14 +82,14 @@ class Order extends Component {
                                                                                     <input className="form-control" type="text" value={v.num} style={{ width: "20px" }} />
                                                                                     <input className="input-group-btn" type="button" value="+" onClick={this.incrementQty.bind(this, i)} />
                                                                                 </div>
-                                                                                <span className="price">${v.price}</span>
+                                                                                <span className="price">${v.price * v.num}</span>
                                                                             </div>
                                                                         </li>
                                                                     })
                                                                 }
                                                                 <li>
                                                                     <div className="dish-name">
-                                                                        <h6 itemProp="headline">Chicken Tandoori Special</h6> <span className="price">$85.00</span>
+                                                                        <h6 itemProp="headline">Chicken Tandoori Special</h6> <span className="price">$80.1</span>
                                                                     </div>
                                                                     <div className="dish-ingredients">
                                                                         <span>The Stein</span>
