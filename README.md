@@ -89,7 +89,29 @@ $ npm start
 
 ## Demo
 
-TBD
+![Main Page 1](/media/screeshot1.png)
+1.  Nav Bar
+    1.  Page Links
+        * Users can use links to go to other pages
+    2.  Search Bar
+        * Users can search for the information they need
+    3.  Shopping Cart
+        * Users can click to check the status of their shopping cart
+    4.  Login with social media accounts
+        * Users can use their social media account to login by clicking corresponding icons
+    5.  Login/Register
+        * Go to the login/register page
+2.  Restaurant Menu
+    * 
+3.  Food Options
+    * 
+![Main Page 2](/media/screeshot2.png)
+4.  Beverage Options
+    *
+![Restaurant Menu](/media/screeshot3.png)
+
+![Shopping Cart](/media/screeshot4.png)
+
 
 ## Contributors
 
