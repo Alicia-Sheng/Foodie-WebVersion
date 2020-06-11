@@ -22,11 +22,27 @@ class App extends React.Component {
     items:[]
   }
 
-  onAddToOrder = this.onAddToOrder.bind(this);
+  /*onAddToOrder = this.onAddToOrder.bind(this);
   onAddToOrder(p) {
     this.setState({
       items: [...this.state.items, p]
     });
+  }*/
+
+  onAddToOrder = this.onAddToOrder.bind(this);
+  onAddToOrder(p) {
+    if (!p.inCart) {
+      this.setState({
+        items: [...this.state.items, p]
+      })
+    } else {
+      let list = this.state.items;
+      // eslint-disable-next-line no-console
+      console.log(list.indexOf(p));
+      list[list.indexOf(p)].num++;
+      this.setState({ items: list })
+    }
+    p.inCart = true;
   }
 
   onRemoveFromOrder = this.onRemoveFromOrder.bind(this);
