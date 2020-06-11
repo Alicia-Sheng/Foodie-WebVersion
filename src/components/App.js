@@ -29,13 +29,24 @@ class App extends React.Component {
     });
   }
 
+  onRemoveFromOrder = this.onRemoveFromOrder.bind(this);
+  onRemoveFromOrder(i) {
+    const newArray = [...this.state.items];
+    newArray.splice(i, 1);
+
+    this.setState({
+      items: newArray
+    });
+  }
+
   render() {
     return(
       <Router>
-        <OrderContext.Provider 
+        <OrderContext.Provider
           value={{
             items: this.state.items,
             onAddToOrder: this.onAddToOrder,
+            onRemoveFromOrder: this.onRemoveFromOrder,
           }}>
           <Header />
           <Switch>
