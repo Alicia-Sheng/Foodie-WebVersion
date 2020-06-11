@@ -39,7 +39,7 @@ A food ordering app specifically designed for university students to order from 
 
   - Add food options
   - Receive orders
-  
+
 - ***For Customers***
 
   - Browse food and beverage options
@@ -52,12 +52,12 @@ A food ordering app specifically designed for university students to order from 
   - Rate the food
   - Browse the comments added by other customers
 
-### Advanced Features 
+### Advanced Features
 
 - ***For Food Providers***
 
   - Edit daily recommendations
-  
+
 - ***For Customers***
 
   - Rank food and beverage options by rating, price
@@ -75,6 +75,12 @@ A food ordering app specifically designed for university students to order from 
 
 ### Install
 
+First please go to the link and download the latest version of Node.js.
+https://nodejs.org/en/download/
+
+After downloading it successfully, please install npm on your computer.
+Type the sentences below in command line or powershell if your are using windows.
+
 ```sh
 $ npm install
 ```
@@ -89,7 +95,35 @@ $ npm start
 
 ## Demo
 
-TBD
+![Main Page 1](https://github.com/Alicia-Sheng/CS153a-FinalProject/blob/master/media/screeshot/screenshot1.png)
+![Main Page 2](https://github.com/Alicia-Sheng/CS153a-FinalProject/blob/master/media/screeshot/screenshot2.png)
+1.  Nav Bar
+    1.  Page Links
+        * Users can use links to go to other pages
+    2.  Search Bar
+        * Users can search for the information they need
+    3.  Shopping Cart
+        * Users can click to check the status of their shopping cart
+    4.  Login with social media accounts
+        * Users can use their social media account to login by clicking corresponding icons
+    5.  Login/Register
+        * Go to the login/register page
+2.  Restaurant Pages
+    * By clicking the logos, users can jump to the restaurant infomation page
+3.  Food Options
+    * Users can browse all food options here
+4.  Beverage Options
+    * Users can browse all beverage options here
+
+![Restaurant Page](https://github.com/Alicia-Sheng/CS153a-FinalProject/blob/master/media/screeshot/screenshot3.png)
+
+  * Food and beverage options are displayed by restaurant
+  * Will add restaurant information to this page
+
+![Shopping Cart](https://github.com/Alicia-Sheng/CS153a-FinalProject/blob/master/media/screeshot/screenshot4.png)
+
+  * Customers can view, add or remove items they put in the shopping cart.
+  * They can place an order here
 
 ## Contributors
 

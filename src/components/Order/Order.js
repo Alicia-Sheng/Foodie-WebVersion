@@ -82,6 +82,7 @@ class Order extends Component {
                                                                                     <input className="form-control" type="text" value={v.num} style={{ width: "20px" }} />
                                                                                     <input className="input-group-btn" type="button" value="+" onClick={this.incrementQty.bind(this, i)} />
                                                                                 </div>
+                                                                                <span className="price">${v.price}</span>
                                                                             </div>
                                                                         </li>
                                                                     })
@@ -128,7 +129,7 @@ class Order extends Component {
                                                 </div>
                                                 <div className="col-lg-6 col-md-6">
                                                     <div className="coupon_code right">
-                                                        <h3>Cart Totals</h3>
+                                                        <h3>Order Totals</h3>
                                                         <div className="coupon_inner">
                                                             <div className="cart_subtotal">
                                                                 <p>Subtotal</p>
