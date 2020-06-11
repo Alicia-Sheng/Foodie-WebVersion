@@ -27,32 +27,22 @@ const restaurant = [{
     },
     {
         "id": 4,
-        "name": "The Stein",
-        "link": "stein",
+        "name": "Starbucks Farber",
+        "link": "starbucks",
         "img": {
-            "src": "media/logo/the-stein.png",
-            "alt": "the-stein"
+            "src": "media/logo/starbucks.jpg",
+            "alt": "starbucks"
         }
     },
     {
         "id": 5,
-        "name": "Dunkin Donuts",
-        "link": "dunkin",
+        "name": "Einstein Bros. Bagels",
+        "link": "einstein-bagels",
         "img": {
-            "src": "media/logo/dunkin-donuts.png",
-            "alt": "dunkin-donuts"
-        }
-    },
-    {
-        "id": 6,
-        "name": "Dunkin Donuts",
-        "link": "dunkin",
-        "img": {
-            "src": "media/logo/dunkin-donuts.png",
-            "alt": "dunkin-donuts"
+            "src": "media/logo/einstein-bagels.png",
+            "alt": "einstein-bagels"
         }
     }
-
 ]
 
 export default restaurant;

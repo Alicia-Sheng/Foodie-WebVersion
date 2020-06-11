@@ -257,6 +257,19 @@ const data = [{
         "price": 0.0,
         "rating": 5.0,
         "category": "drink"
+    },
+    {
+        "id": 21,
+        "name": "French Toast Chicken",
+        "location": "Einstein Bros. Bagels",
+        "img": {
+            "src": "media/french-toast-chicken.jpg",
+            "alt": "French Toast Chicken"
+        },
+        "desc": "Cage-Free Eggs, Crispy Chicken, Cheddar Cheese and Honey Almond Shmear on a French Toast Bagel.",
+        "price": 12.0,
+        "rating": 5.0,
+        "category": "food"
     }
 ]
 

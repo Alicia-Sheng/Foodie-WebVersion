@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import Restaurant from '../components/Restaurant/Restaurant';
 import './RestaurantList.css'
 
+import { Link } from 'react-router-dom';
+
 const RestaurantList = ({ data }) => {
   return (
     <>
@@ -24,6 +26,15 @@ const RestaurantList = ({ data }) => {
                           <Restaurant restaurant={restaurant}/>
                         </li>
                       ))}
+                      <li className="wow bounceIn" data-wow-delay="0.2s">
+                      <div className="top-restaurant">
+                        <a className="brd-rd50" href="#" title="restaurants" itemProp="url">
+                          <Link to="/restaurants">
+                            <img src={"media/logo/all-restaurants.jpg"} alt="restaurants" itemProp="image" />
+                          </Link>
+                        </a>
+                      </div>
+                      </li>
                     </ul>
                   </div>
                 </div>
