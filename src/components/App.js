@@ -11,11 +11,32 @@ import Account from '../Account'
 import Login from './Account/Login'
 import Register from './Account/Register'
 
+import {
+  OrderContext
+} from "./Context/OrderContext";
+
 
 class App extends React.Component {
+
+  state = {
+    items:[]
+  }
+
+  onAddToOrder = this.onAddToOrder.bind(this);
+  onAddToOrder(p) {
+    this.setState({
+      items: [...this.state.items, p]
+    });
+  }
+
   render() {
     return(
       <Router>
+        <OrderContext.Provider 
+          value={{
+            items: this.state.items,
+            onAddToOrder: this.onAddToOrder,
+          }}>
           <Header />
           <Switch>
             <Route exact path="/" component={MainContent} />
@@ -27,6 +48,7 @@ class App extends React.Component {
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
           </Switch>
+          </OrderContext.Provider>
       </Router>
     )
   }

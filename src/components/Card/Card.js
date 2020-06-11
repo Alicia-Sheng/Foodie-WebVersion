@@ -6,6 +6,10 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from '@fortawesome/free-regular-svg-icons';
 
+import {
+    OrderContext
+} from "../Context/OrderContext";
+
 const Img = styled.img`
   width: 100%;
   height: 300px;
@@ -14,6 +18,8 @@ const Img = styled.img`
 const Card = ({ food }) => {
 
     return (
+        <OrderContext.Consumer>
+            {order => (
         <div className='card'>
             <div className='card-header'>
                 <a href="#" title="" itemProp="url">
@@ -25,12 +31,16 @@ const Card = ({ food }) => {
                 <h2 itemProp='headline' className='card-title'>{`${food.name}`}</h2>
                 <p itemProp='description' className='card-desc'>{`${food.desc}`}</p>
                 <span className='card-price'>{`$${food.price}`}</span>
-                <a className='card-order' href="#" title="Order Now">Add to Order</a>
+                    <a className='card-order' href="javascript:void(0);" title="Order Now" onClick={() => order.onAddToOrder(food)}>Add to Order</a>
+                        {/* {order.items.filter(p => p.id === food.id).length || 'none'} */}
                 <div className='restaurant-info'>
                     <h6 itemProp='headline'>{`${food.location}`}</h6>
                 </div>
             </div>
         </div>
+        )}
+        </OrderContext.Consumer>
+
     );
 };
 
