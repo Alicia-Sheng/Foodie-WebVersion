@@ -12,22 +12,24 @@ import Login from './Account/Login'
 import Register from './Account/Register'
 
 
-function App() {
-  return(
-    <Router>
-        <Header />
-        <Switch>
-          <Route exact path="/" component={MainContent} />
-          <Route exact path="/sherman" component={Sherman} />
-          <Route exact path="/stein" component={Stein} />
-          <Route exact path="/dunkin" component={Dunkin} />
-          <Route exact path="/order" component={order} />
-          <Route exact path="/account" component={Account} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/register" component={Register} />
-        </Switch>
-    </Router>
+class App extends React.Component {
+  render() {
+    return(
+      <Router>
+          <Header />
+          <Switch>
+            <Route exact path="/" component={MainContent} />
+            <Route exact path="/sherman" component={Sherman} />
+            <Route exact path="/stein" component={Stein} />
+            <Route exact path="/dunkin" component={Dunkin} />
+            <Route exact path="/order" component={order} />
+            <Route exact path="/account" component={Account} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/register" component={Register} />
+          </Switch>
+      </Router>
     )
+  }
 }
 
 export default App

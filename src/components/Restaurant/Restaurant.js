@@ -20,7 +20,7 @@ const Restaurant = ({restaurant}) => {
 };
 
 Restaurant.propTypes = {
-    restaurant: PropTypes.object.isRequired,
+    restaurant: PropTypes.object.isRequired
 }
 
 export default Restaurant;

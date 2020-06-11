@@ -8,15 +8,17 @@ import foodData from '../../assets/data.js'
 
 import '../style.css'
 
-function MainContent() {
-  return (
-    <>
-      <div div className='container-fluid'>
-        <RestaurantList data={restaurantData} />
-        <CardList data={foodData}/>
-      </div>
-    </>
-  )
+class MainContent extends React.Component {
+  render() {
+    return (
+      <>
+        <div div className='container-fluid'>
+          <RestaurantList data={restaurantData} />
+          <CardList data={foodData}/>
+        </div>
+      </>
+    )
+  }
 }
 
 export default MainContent

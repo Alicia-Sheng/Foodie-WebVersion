@@ -39,7 +39,7 @@ A food ordering app specifically designed for university students to order from 
 
   - Add food options
   - Receive orders
-  
+
 - ***For Customers***
 
   - Browse food and beverage options
@@ -52,12 +52,12 @@ A food ordering app specifically designed for university students to order from 
   - Rate the food
   - Browse the comments added by other customers
 
-### Advanced Features 
+### Advanced Features
 
 - ***For Food Providers***
 
   - Edit daily recommendations
-  
+
 - ***For Customers***
 
   - Rank food and beverage options by rating, price
