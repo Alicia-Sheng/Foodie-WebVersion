@@ -9,7 +9,7 @@ class Order extends Component {
         this.state = {
             orderList: [
                 { id: 1, name: "Caesar Salad", num: 1, price: 6.99, checked: true },
-                { id: 2, name: "Chicken Tender", num: 2, price :8.99, checked: true}
+                { id: 2, name: "Chicken Tender", num: 2, price: 8.99, checked: true}
             ]
         };
 
@@ -97,24 +97,8 @@ class Order extends Component {
 
                                                                     })
                                                                 }
-
-                                                                <li>
-                                                                    <div className="dish-name">
-                                                                        <h6 itemProp="headline">Chicken Tandoori Special</h6> <span className="price">$80.1</span>
-                                                                    </div>
-                                                                    <div className="dish-ingredients">
-                                                                        <span>The Stein</span>
-                                                                    </div>
-                                                                    <div className="mor-ingredients">
-                                                                        <div className="qty-wrap">
-                                                                            <input className="qty" type="text" value="1" />
-                                                                            <button>-</button> 1 <button>+</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </li>
-
-
                                                             </ul>
+
                                                             <ul className="order-total">
                                                                 <li><span>SubTotal</span> <i>${this.getTotal()}</i></li>
                                                                 <li><span>Tax</span> <i>${this.getTax(this.getTotal())}</i></li>
