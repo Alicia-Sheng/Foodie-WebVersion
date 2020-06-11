@@ -17,12 +17,12 @@ const restaurant = [{
         }
     },
     {
-        "id": 3,
-        "name": "The Stein",
-        "link": "stein",
+        "id": 4,
+        "name": "Sherman",
+        "link": "sherman",
         "img": {
-            "src": "media/logo/the-stein.png",
-            "alt": "the-stein"
+            "src": "media/logo/Sherman.png",
+            "alt": "sherman"
         }
     },
     {
