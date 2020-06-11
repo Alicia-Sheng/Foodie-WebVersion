@@ -2,13 +2,16 @@ import React, { Component } from 'react'
 
 import './Order.css'
 
+import foodData from '../../../assets/data'
+
 class Order extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
             orderList: [
-                { id: 1, name: "Caesar Salad", num: 1, price: 6.99, checked: false }
+                { id: 1, name: "Caesar Salad", num: 1, price: 6.99, checked: true },
+                { id: 2, name: "Chicken Tender", num: 2, price :8.99, checked: true}
             ]
         };
 
@@ -31,6 +34,14 @@ class Order extends Component {
             }
         });
         return total
+    }
+    getTax(n){
+       let tax = n * 0.15;
+       return tax
+    }
+
+    sum(x, y){
+      return x + y
     }
 
     incrementQty(n) {
@@ -85,8 +96,10 @@ class Order extends Component {
                                                                                 <span className="price">${v.price * v.num}</span>
                                                                             </div>
                                                                         </li>
+
                                                                     })
                                                                 }
+                                                                
                                                                 <li>
                                                                     <div className="dish-name">
                                                                         <h6 itemProp="headline">Chicken Tandoori Special</h6> <span className="price">$80.1</span>
@@ -101,13 +114,15 @@ class Order extends Component {
                                                                         </div>
                                                                     </div>
                                                                 </li>
+
+
                                                             </ul>
                                                             <ul className="order-total">
                                                                 <li><span>SubTotal</span> <i>${this.getTotal()}</i></li>
-                                                                <li><span>Tax</span> <i>$12</i></li>
+                                                                <li><span>Tax</span> <i>${this.getTax(this.getTotal())}</i></li>
                                                             </ul>
                                                             <ul className="order-method brd-rd2 red-bg">
-                                                                <li><span>Total</span> <span className="price">$340</span></li>
+                                                                <li><span>Total</span> <span className="price">${this.sum(this.getTotal(), this.getTax(this.getTotal()))} </span></li>
                                                                 <li><a className="brd-rd2" href="#" title="" itemProp="url">CONFIRM ORDER</a></li>
                                                             </ul>
                                                         </div>
