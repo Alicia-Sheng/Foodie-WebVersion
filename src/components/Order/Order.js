@@ -130,17 +130,17 @@ class Order extends Component {
                                                         <div className="coupon_inner">
                                                             <div className="cart_subtotal">
                                                                 <p>Subtotal</p>
-                                                                <p className="cart_amount">$27.07</p>
+                                                                <p className="cart_amount">${this.getTotal()}</p>
                                                             </div>
                                                             <div className="cart_subtotal ">
                                                                 <p>Tax</p>
-                                                                <p className="cart_amount"> $2.70</p>
+                                                                <p className="cart_amount">${this.getTax(this.getTotal())}</p>
                                                             </div>
                                                             <a href="#">Calculate Tax</a>
 
                                                             <div className="cart_subtotal">
                                                                 <p>Total</p>
-                                                                <p className="cart_amount">$29.77</p>
+                                                                <p className="cart_amount">${this.sum(this.getTotal(), this.getTax(this.getTotal()))}</p>
                                                             </div>
                                                             <div className="checkout_btn">
                                                                 <a href="#">Proceed to Checkout</a>
