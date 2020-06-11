@@ -23,8 +23,8 @@ function App() {
           <Route exact path="/dunkin" component={Dunkin} />
           <Route exact path="/order" component={order} />
           <Route exact path="/account" component={Account} />
-          <Route exact path="/account/login" component={Login} />
-          <Route exact path="/account/register" component={Register} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/register" component={Register} />
         </Switch>
     </Router>
     )
