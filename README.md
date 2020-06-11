@@ -75,7 +75,7 @@ A food ordering app specifically designed for university students to order from 
 
 ### Install
 
-First please go to the link and download the current version of Node.js.
+First please go to the link and download the latest version of Node.js.
 https://nodejs.org/en/download/
 
 After downloading it successfully, please install npm on your computer.
