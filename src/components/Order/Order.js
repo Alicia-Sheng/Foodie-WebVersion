@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import {
+    OrderContext
+} from "../Context/OrderContext";
 
 import './Order.css'
 
@@ -60,7 +63,8 @@ class Order extends Component {
 
     render() {
         return (
-            <>
+          <OrderContext.Consumer>
+            {order => (
                 <section>
                     <div className='container'>
                         <div className="block remove-bottom">
@@ -75,7 +79,7 @@ class Order extends Component {
                                                         <div className="order-list-wrapper">
                                                             <ul className="order-list-inner">
                                                                 {
-                                                                    this.state.orderList.map((v, i) => {
+                                                                    order.items.map((v, i) => {
                                                                         return <li
                                                                         key={i}>
                                                                             {/*<span className={(v.checked?"active":"")+" d1"} onClick={this.tg.bind(this,i)}></span>*/}
@@ -83,7 +87,7 @@ class Order extends Component {
                                                                                 <h6 itemProp="headline">{v.name}</h6> <span className="price">${v.price}</span>
                                                                             </div>
                                                                             <div className="dish-ingredients">
-                                                                                <span>The Stein</span>
+                                                                                <span>{v.location}</span>
                                                                             </div>
                                                                             <div className="mor-ingredients">
                                                                                 <div className="qty-wrap input-group">
@@ -156,7 +160,8 @@ class Order extends Component {
                         </div>
                     </div>
                 </section>
-            </>
+            )}
+            </OrderContext.Consumer>
         )
     }
 }
