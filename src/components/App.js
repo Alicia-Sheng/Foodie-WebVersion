@@ -83,13 +83,13 @@ class App extends React.Component {
               total += (v.num * v.price);
           }*/
       });
-      return total
+      return total.toFixed(2)
   }
 
   getTax = this.getTax.bind(this);
   getTax(n){
      let tax = n * 0.15;
-     return tax
+     return tax.toFixed(2)
   }
 
   sum = this.sum.bind(this);
