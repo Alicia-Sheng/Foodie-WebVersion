@@ -95,7 +95,7 @@ class Order extends Component {
                                                                                     <input className="form-control" type="text" value={v.num} style={{ width: "20px" }} />
                                                                                     <input className="input-group-btn" type="button" value="+" onClick={order.incrementQty.bind(v, i)} />
                                                                                 </div>
-                                                                                <span className="price">${(v.price * v.num).toFixed(2)}</span>
+                                                                                <span className="price">${parseFloat((v.price * v.num).toFixed(2))}</span>
                                                                             </div>
                                                                         </li>
 
