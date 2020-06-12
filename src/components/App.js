@@ -44,27 +44,36 @@ class App extends React.Component {
 
   onAddToOrder = this.onAddToOrder.bind(this);
   onAddToOrder(p) {
-    if (!p.inCart) {
+    let newArray = [...this.state.products];
+    let add = newArray.find(item => item.id === p.id);
+    if (!add.inCart) {
+      add.num = 1;
+      add.inCart = true;
       this.setState({
-        items: [...this.state.items, p]
+        items: [...this.state.items, add]
       })
     } else {
       let list = this.state.items;
       list[list.indexOf(p)].num++;
       this.setState({ items: list })
     }
-    p.inCart = true;
   }
 
   onRemoveFromOrder = this.onRemoveFromOrder.bind(this);
-  onRemoveFromOrder(i) {
+  onRemoveFromOrder(p) {
+    alert("Item removed");
+    let newArray = [...this.state.products];
+    let remove = newArray.find(item => item.id === p.id);
+    remove.inCart = false;
+    remove.num = 1;
     // eslint-disable-next-line no-console
-    console.log("yeah");
-    const newArray = [...this.state.items];
-    newArray.splice(i, 1);
-
+    console.log(this.state.items);
+    let list = this.state.items.filter(item => item.id !== p.id);
+    // eslint-disable-next-line no-console
+    console.log(list);
     this.setState({
-      items: newArray
+      items: [...list],
+      products: [...newArray]
     });
   }
 
@@ -73,9 +82,10 @@ class App extends React.Component {
       let list = this.state.items;
       let total = 0;
       list.forEach((v) => {
-          if (!v.checked) {
+          total += (v.num * v.price);
+          /*if (!v.checked) {
               total += (v.num * v.price);
-          }
+          }*/
       });
       return total
   }
@@ -103,8 +113,7 @@ class App extends React.Component {
       let list = this.state.items;
       list[n].num--;
       if (list[n].num <= 0) {
-          alert("Item removed");
-          list[n].checked = false;
+          /*list[n].checked = false;*/
           this.onRemoveFromOrder(list[n]);
       }
       this.setState({ items: list })

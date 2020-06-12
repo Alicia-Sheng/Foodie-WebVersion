@@ -9,10 +9,7 @@ const data = [{
         "desc": "Crisp Romaine lettuce and Garlic Croutons tossed in Creamy Caesar",
         "price": 6.69,
         "rating": 5.0,
-        "category": "food",
-        "num": 1,
-        "inCart": false,
-        "checked": false
+        "category": "food"
     },
     {
         "id": 2,
@@ -25,10 +22,7 @@ const data = [{
         "desc": "A tasty sandwich stacked with egg, American cheese and irresistible sausage",
         "price": 5.89,
         "rating": 5.0,
-        "category": "food",
-        "num": 1,
-        "inCart": false,
-        "checked": false
+        "category": "food"
     },
     {
         "id": 3,
@@ -41,10 +35,7 @@ const data = [{
         "desc": "A Mexican dish and type of taco, consisting of a tortilla that is filled primarily with cheese",
         "price": 8.99,
         "rating": 5.0,
-        "category": "food",
-        "num": 1,
-        "inCart": false,
-        "checked": false
+        "category": "food"
     },
     {
         "id": 4,
@@ -57,10 +48,7 @@ const data = [{
         "desc": "Carrots and cilantro add a crisp, refreshing taste to stir-fried Omaha Steaks Top Sirloin Steaks",
         "price": 11.39,
         "rating": 5.0,
-        "category": "food",
-        "num": 1,
-        "inCart": false,
-        "checked": false
+        "category": "food"
     },
     {
         "id": 5,
@@ -73,10 +61,7 @@ const data = [{
         "desc": "A popular Chinese entree made with fried chicken pieces coated in a sweet and slightly spicy sauce",
         "price": 13.69,
         "rating": 5.0,
-        "category": "food",
-        "num": 1,
-        "inCart": false,
-        "checked": false
+        "category": "food"
     },
     {
         "id": 6,
@@ -89,10 +74,7 @@ const data = [{
         "desc": "Traditional Fries or Fried Zucchini Sticks with Chipotle Aioli",
         "price": 3.19,
         "rating": 5.0,
-        "category": "food",
-        "num": 1,
-        "inCart": false,
-        "checked": false
+        "category": "food"
     },
     {
         "id": 7,
@@ -105,10 +87,7 @@ const data = [{
         "desc": "Tortilla Chips Covered in Melted Chihuahua Cheese, Olives, Tomatoes, and Fresh Cilantro with sour cream and salsa",
         "price": 6.99,
         "rating": 5.0,
-        "category": "food",
-        "num": 1,
-        "inCart": false,
-        "checked": false
+        "category": "food"
     },
     {
         "id": 8,
@@ -121,10 +100,7 @@ const data = [{
         "desc": "Plain, BBQ or Buffalo Served with Carrot Sticks",
         "price": 8.29,
         "rating": 5.0,
-        "category": "food",
-        "num": 1,
-        "inCart": false,
-        "checked": false
+        "category": "food"
     },
     {
         "id": 9,
@@ -137,10 +113,7 @@ const data = [{
         "desc": "Your choice of BBQ, Buffalo or Garlic Parmesan Sauce served with Carrot sticks",
         "price": 10.29,
         "rating": 5.0,
-        "category": "food",
-        "num": 1,
-        "inCart": false,
-        "checked": false
+        "category": "food"
     },
     {
         "id": 10,
@@ -153,10 +126,7 @@ const data = [{
         "desc": "Crisp Romaine Lettuce. Chopped Applem Dried Cranberries and Red Onion",
         "price": 7.39,
         "rating": 5.0,
-        "category": "food",
-        "num": 1,
-        "inCart": false,
-        "checked": false
+        "category": "food"
     },
     {
         "id": 11,
@@ -169,10 +139,7 @@ const data = [{
         "desc": "Quinoa and Baby Kale Tossed with Shredded Red Cabbage, Carrots, Green Onions and Sesame Seeds, Served with House-Made Asian Hney Vinaigrette",
         "price": 6.29,
         "rating": 5.0,
-        "category": "food",
-        "num": 1,
-        "inCart": false,
-        "checked": false
+        "category": "food"
     },
     {
         "id": 12,
@@ -185,10 +152,7 @@ const data = [{
         "desc": "Slice of Cheese Pizza",
         "price": 11.49,
         "rating": 5.0,
-        "category": "food",
-        "num": 1,
-        "inCart": false,
-        "checked": false
+        "category": "food"
     },
     {
         "id": 13,
@@ -201,10 +165,7 @@ const data = [{
         "desc": "Served on a toasted brioche bun with lettuce, tomato and Onion",
         "price": 8.49,
         "rating": 5.0,
-        "category": "food",
-        "num": 1,
-        "inCart": false,
-        "checked": false
+        "category": "food"
     },
     {
         "id": 14,
@@ -217,10 +178,7 @@ const data = [{
         "desc": "Plant-Based Vegan Burger served on a toasted Brioche Bun with lettuce tomato and onion",
         "price": 12.49,
         "rating": 5.0,
-        "category": "food",
-        "num": 1,
-        "inCart": false,
-        "checked": false
+        "category": "food"
     },
     {
         "id": 15,
@@ -233,10 +191,7 @@ const data = [{
         "desc": "Our Frozen Chocolate is an indulgent treat, made with your choice of flavor and topped with whipped cream",
         "price": 4.99,
         "rating": 5.0,
-        "category": "drink",
-        "num": 1,
-        "inCart": false,
-        "checked": false
+        "category": "drink"
     },
     {
         "id": 16,
@@ -249,10 +204,7 @@ const data = [{
         "desc": "Fun, refreshing flavors that are sure to make you smile",
         "price": 3.99,
         "rating": 5.0,
-        "category": "drink",
-        "num": 1,
-        "inCart": false,
-        "checked": false
+        "category": "drink"
     },
     {
         "id": 17,
@@ -265,10 +217,7 @@ const data = [{
         "desc": "Our NEW energizing Frozen Coffee is smooth, creamy and full of real Dunkin’® flavor—making it the perfect way to cool off",
         "price": 3.99,
         "rating": 5.0,
-        "category": "drink",
-        "num": 1,
-        "inCart": false,
-        "checked": false
+        "category": "drink"
     },
     {
         "id": 18,
@@ -281,10 +230,7 @@ const data = [{
         "desc": "Classic, sweet coke. Free with a main course.",
         "price": 0.0,
         "rating": 5.0,
-        "category": "drink",
-        "num": 1,
-        "inCart": false,
-        "checked": false
+        "category": "drink"
     },
     {
         "id": 19,
@@ -297,10 +243,7 @@ const data = [{
         "desc": " A popular carbonated beverage made by flavoring soft drink with ginger. Free with a main course.",
         "price": 0.0,
         "rating": 5.0,
-        "category": "drink",
-        "num": 1,
-        "inCart": false,
-        "checked": false
+        "category": "drink"
     },
     {
         "id": 20,
@@ -313,11 +256,7 @@ const data = [{
         "desc": "Water with Lemon inside. Free with a main course.",
         "price": 0.0,
         "rating": 5.0,
-//<<<<<<< HEAD
-        "category": "drink",
-        "num": 1,
-        "inCart": false,
-        "checked": false,
+        "category": "drink"
     },
     {
         "id": 21,
@@ -330,10 +269,7 @@ const data = [{
         "desc": "Cage-Free Eggs, Crispy Chicken, Cheddar Cheese and Honey Almond Shmear on a French Toast Bagel.",
         "price": 12.0,
         "rating": 5.0,
-        "category": "food",
-        "num": 1,
-        "inCart": false,
-        "checked": false,
+        "category": "food"
     },
     {
       "id": 22,
@@ -346,10 +282,7 @@ const data = [{
       "desc": "Cage-Free Eggs, Crispy Chicken, Cheddar Cheese and Honey Almond Shmear on a French Toast Bagel.",
       "price": 2.95,
       "rating": 5.0,
-      "category": "drink",
-      "num": 1,
-      "inCart": false,
-      "checked": false,
+      "category": "drink"
     }
 ]
 
