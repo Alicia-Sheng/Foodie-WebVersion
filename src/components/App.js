@@ -38,8 +38,6 @@ class App extends React.Component {
       })
     } else {
       let list = this.state.items;
-      // eslint-disable-next-line no-console
-      console.log(list.indexOf(p));
       list[list.indexOf(p)].num++;
       this.setState({ items: list })
     }
@@ -61,7 +59,7 @@ class App extends React.Component {
       let list = this.state.items;
       let total = 0;
       list.forEach((v) => {
-          if (v.checked) {
+          if (!v.checked) {
               total += (v.num * v.price);
           }
       });

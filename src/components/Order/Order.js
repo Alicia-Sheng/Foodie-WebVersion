@@ -9,12 +9,12 @@ class Order extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {
+        /*this.state = {
             orderList: [
                 { id: 1, name: "Caesar Salad", num: 1, price: 6.99, checked: true },
                 { id: 2, name: "Chicken Tender", num: 2, price: 8.99, checked: true}
             ]
-        };
+        };*/
 
         // this.handleChange = this.handleChange.bind(this);
     }
