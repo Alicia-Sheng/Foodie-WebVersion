@@ -53,7 +53,7 @@ class Header extends React.Component {
                                 <div className='shoppingbag'>
                                     <Link to="/order" >
                                         <FontAwesomeIcon icon={faShoppingBag} />
-                                        <span> {order.items.length || ''}   
+                                        <span> {order.itemSum() || ''}   
                                             {/* {order.items.map((p) => (
 
                                                 <span key={p.id} className="order-item">
