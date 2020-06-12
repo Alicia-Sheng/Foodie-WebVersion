@@ -313,13 +313,12 @@ const data = [{
         "desc": "Water with Lemon inside. Free with a main course.",
         "price": 0.0,
         "rating": 5.0,
-<<<<<<< HEAD
+//<<<<<<< HEAD
         "category": "drink",
         "num": 1,
         "inCart": false,
-        "checked": false
-=======
-        "category": "drink"
+        "checked": false,
+//=======
     },
     {
         "id": 21,
@@ -333,7 +332,7 @@ const data = [{
         "price": 12.0,
         "rating": 5.0,
         "category": "food"
->>>>>>> 5cc4eaf918e89e67c2af8f868e02a4eb2bac77a6
+//>>>>>>> 5cc4eaf918e89e67c2af8f868e02a4eb2bac77a6
     }
 ]
 
