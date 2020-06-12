@@ -15,7 +15,7 @@ function Einstein() {
             <h2 itemProp="headline">Einstein</h2>
           </div>
         </div>
-        <MenuList data={foodData} dinHall="Einstein" />
+        <MenuList data={foodData} dinHall="Einstein Bros. Bagels" />
       </div>
     </section>
   )

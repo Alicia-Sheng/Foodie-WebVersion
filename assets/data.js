@@ -334,6 +334,22 @@ const data = [{
         "num": 1,
         "inCart": false,
         "checked": false,
+    },
+    {
+      "id": 22,
+      "name": "Latte",
+      "location": "Starbucks Farber",
+      "img": {
+          "src": "media/Latte.jpg",
+          "alt": "Latte"
+      },
+      "desc": "Cage-Free Eggs, Crispy Chicken, Cheddar Cheese and Honey Almond Shmear on a French Toast Bagel.",
+      "price": 2.95,
+      "rating": 5.0,
+      "category": "drink",
+      "num": 1,
+      "inCart": false,
+      "checked": false,
     }
 ]
 

@@ -15,7 +15,7 @@ function Starbucks() {
             <h2 itemProp="headline">Starbucks</h2>
           </div>
         </div>
-        <MenuList data={foodData} dinHall="Starbucks" />
+        <MenuList data={foodData} dinHall="Starbucks Farber" />
       </div>
     </section>
   )
