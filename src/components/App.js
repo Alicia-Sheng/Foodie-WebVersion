@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import data from '../../assets/data.js'
 import Header from './Header/Header'
 import MainContent from './MainContent'
 import Sherman from './Menu/Sherman'
@@ -19,7 +19,8 @@ import {
 class App extends React.Component {
 
   state = {
-    items:[]
+    products: data,
+    items:[],
   }
 
   /*onAddToOrder = this.onAddToOrder.bind(this);
@@ -37,8 +38,6 @@ class App extends React.Component {
       })
     } else {
       let list = this.state.items;
-      // eslint-disable-next-line no-console
-      console.log(list.indexOf(p));
       list[list.indexOf(p)].num++;
       this.setState({ items: list })
     }
@@ -55,6 +54,69 @@ class App extends React.Component {
     });
   }
 
+  getTotal = this.getTotal.bind(this);
+  getTotal() {
+      let list = this.state.items;
+      let total = 0;
+      list.forEach((v) => {
+          if (!v.checked) {
+              total += (v.num * v.price);
+          }
+      });
+      return total
+  }
+
+  getTax = this.getTax.bind(this);
+  getTax(n){
+     let tax = n * 0.15;
+     return tax
+  }
+
+  sum = this.sum.bind(this);
+  sum(x, y){
+    return x + y
+  }
+
+  /*incrementQty = this.incrementQty(this);
+  incrementQty(id) {
+      let list = [...this.state.items];
+      const selected = list.find(item => item.id === id);
+      const index = list.indexOf(selected);
+      const product = list[index];
+      product.num = product.num + 1;
+      product.total = product.num * product.num;
+      this.setState(()=>{
+          return {items: [...list]}
+      }, () => {
+          this.makeTotal();
+      })
+    }
+
+  decrementQty = this.decrementQty(this);
+  decrementQty(id) {
+    let list = [...this.state.items];
+    const selected = list.find(item => item.id === id);
+    const index = list.indexOf(selected);
+    const product = list[index];
+    product.num = product.num - 1;
+    product.total = product.num * product.num;
+    this.setState(()=>{
+        return {items: [...list]}
+    }, () => {
+        this.makeTotal();
+    })
+  }*/
+
+  itemSum = this.itemSum.bind(this);
+  itemSum() {
+    let list = this.state.items;
+    let total = 0;
+    list.forEach((v) => {
+            total += v.num;
+    });
+    return total
+  }
+
   render() {
     return(
       <Router>
@@ -63,6 +125,12 @@ class App extends React.Component {
             items: this.state.items,
             onAddToOrder: this.onAddToOrder,
             onRemoveFromOrder: this.onRemoveFromOrder,
+            itemSum: this.itemSum,
+            incrementQty: this.incrementQty,
+            decrementQty: this.decrementQty,
+            getTotal: this.getTotal,
+            getTax: this.getTax,
+            sum: this.sum,
           }}>
           <Header />
           <Switch>

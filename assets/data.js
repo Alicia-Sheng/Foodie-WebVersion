@@ -318,7 +318,6 @@ const data = [{
         "num": 1,
         "inCart": false,
         "checked": false,
-//=======
     },
     {
         "id": 21,
@@ -331,8 +330,10 @@ const data = [{
         "desc": "Cage-Free Eggs, Crispy Chicken, Cheddar Cheese and Honey Almond Shmear on a French Toast Bagel.",
         "price": 12.0,
         "rating": 5.0,
-        "category": "food"
-//>>>>>>> 5cc4eaf918e89e67c2af8f868e02a4eb2bac77a6
+        "category": "food",
+        "num": 1,
+        "inCart": false,
+        "checked": false,
     }
 ]
 

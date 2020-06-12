@@ -9,12 +9,12 @@ class Order extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {
+        /*this.state = {
             orderList: [
                 { id: 1, name: "Caesar Salad", num: 1, price: 6.99, checked: true },
                 { id: 2, name: "Chicken Tender", num: 2, price: 8.99, checked: true}
             ]
-        };
+        };*/
 
         // this.handleChange = this.handleChange.bind(this);
     }
@@ -26,7 +26,7 @@ class Order extends Component {
     //     });
     // }
 
-    getTotal() {
+    /*getTotal() {
         let list = this.state.orderList;
         let total = 0;
         list.forEach((v) => {
@@ -43,7 +43,7 @@ class Order extends Component {
 
     sum(x, y){
       return x + y
-    }
+    }*/
 
     incrementQty(n) {
         let list = this.state.orderList;
@@ -104,11 +104,11 @@ class Order extends Component {
                                                             </ul>
 
                                                             <ul className="order-total">
-                                                                <li><span>SubTotal</span> <i>${this.getTotal()}</i></li>
-                                                                <li><span>Tax</span> <i>${this.getTax(this.getTotal())}</i></li>
+                                                                <li><span>SubTotal</span> <i>${order.getTotal()}</i></li>
+                                                                <li><span>Tax</span> <i>${order.getTax(order.getTotal())}</i></li>
                                                             </ul>
                                                             <ul className="order-method brd-rd2 red-bg">
-                                                                <li><span>Total</span> <span className="price">${this.sum(this.getTotal(), this.getTax(this.getTotal()))} </span></li>
+                                                                <li><span>Total</span> <span className="price">${order.sum(order.getTotal(), order.getTax(order.getTotal()))} </span></li>
                                                                 <li><a className="brd-rd2" href="#" title="" itemProp="url">CONFIRM ORDER</a></li>
                                                             </ul>
                                                         </div>
@@ -134,17 +134,17 @@ class Order extends Component {
                                                         <div className="coupon_inner">
                                                             <div className="cart_subtotal">
                                                                 <p>Subtotal</p>
-                                                                <p className="cart_amount">${this.getTotal()}</p>
+                                                                <p className="cart_amount">${order.getTotal()}</p>
                                                             </div>
                                                             <div className="cart_subtotal ">
                                                                 <p>Tax</p>
-                                                                <p className="cart_amount">${this.getTax(this.getTotal())}</p>
+                                                                <p className="cart_amount">${order.getTax(order.getTotal())}</p>
                                                             </div>
                                                             <a href="#">Calculate Tax</a>
 
                                                             <div className="cart_subtotal">
                                                                 <p>Total</p>
-                                                                <p className="cart_amount">${this.sum(this.getTotal(), this.getTax(this.getTotal()))}</p>
+                                                                <p className="cart_amount">${order.sum(order.getTotal(), order.getTax(order.getTotal()))}</p>
                                                             </div>
                                                             <div className="checkout_btn">
                                                                 <a href="#">Proceed to Checkout</a>
