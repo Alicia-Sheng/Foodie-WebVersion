@@ -65,12 +65,8 @@ class App extends React.Component {
     let newArray = [...this.state.products];
     let remove = newArray.find(item => item.id === p.id);
     remove.inCart = false;
-    remove.num = 1;
-    // eslint-disable-next-line no-console
-    console.log(this.state.items);
+    remove.num = 0;
     let list = this.state.items.filter(item => item.id !== p.id);
-    // eslint-disable-next-line no-console
-    console.log(list);
     this.setState({
       items: [...list],
       products: [...newArray]
