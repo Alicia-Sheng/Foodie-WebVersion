@@ -61,7 +61,7 @@ class App extends React.Component {
 
   onRemoveFromOrder = this.onRemoveFromOrder.bind(this);
   onRemoveFromOrder(p) {
-    alert("Item removed");
+    /*alert("Item removed");*/
     let newArray = [...this.state.products];
     let remove = newArray.find(item => item.id === p.id);
     remove.inCart = false;
