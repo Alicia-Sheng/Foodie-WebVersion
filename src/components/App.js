@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import data from '../../assets/data.js'
+
 import Header from './Header/Header'
 import MainContent from './MainContent'
 import Sherman from './Menu/Sherman'
@@ -13,6 +14,14 @@ import order from './Order/Order'
 import Account from '../Account'
 import Login from './Account/Login'
 import Register from './Account/Register'
+
+{/*
+import BeefSpringRolls from './Food/BeefSpringRolls'
+import CaesarSalad from './Food/CaesarSalad'
+import CheeseQuesadilla from './Food/CheeseQuesadilla'
+import GeneralChicken from './Food/GeneralChicken'
+import SausageCroissant from './Food/SausageCroissant'
+*/}
 
 import {
   OrderContext
@@ -138,6 +147,13 @@ class App extends React.Component {
             <Route exact path="/account" component={Account} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
+{/*
+            <Route exact path="/beefSpringRolls" component={BeefSpringRolls} />
+            <Route exact path="/caesarSalad" component={CaesarSalad} />
+            <Route exact path="/cheeseQuesadilla" component={CheeseQuesadilla} />
+            <Route exact path="/generalChicken" component={GeneralChicken} />
+            <Route exact path="/sausageCroissant" component={SausageCroissant} />
+*/}
           </Switch>
           </OrderContext.Provider>
       </Router>
