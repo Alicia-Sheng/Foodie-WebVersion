@@ -49,6 +49,8 @@ class App extends React.Component {
 
   onRemoveFromOrder = this.onRemoveFromOrder.bind(this);
   onRemoveFromOrder(i) {
+    // eslint-disable-next-line no-console
+    console.log("yeah");
     const newArray = [...this.state.items];
     newArray.splice(i, 1);
 
@@ -94,6 +96,7 @@ class App extends React.Component {
       if (list[n].num <= 0) {
           alert("Item removed");
           list[n].checked = false;
+          this.onRemoveFromOrder(list[n]);
       }
       this.setState({ items: list })
   }
