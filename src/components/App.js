@@ -6,6 +6,9 @@ import MainContent from './MainContent'
 import Sherman from './Menu/Sherman'
 import Stein from './Menu/Stein'
 import Dunkin from './Menu/Dunkin'
+import Einstein from './Menu/Einstein'
+import Starbucks from './Menu/Starbucks'
+
 import order from './Order/Order'
 import Account from '../Account'
 import Login from './Account/Login'
@@ -126,6 +129,8 @@ class App extends React.Component {
             <Route exact path="/sherman" component={Sherman} />
             <Route exact path="/stein" component={Stein} />
             <Route exact path="/dunkin" component={Dunkin} />
+            <Route exact path="/starbucks" component={Starbucks} />
+            <Route exact path="/einstein-bagels" component={Einstein} />
             <Route exact path="/order" component={order} />
             <Route exact path="/account" component={Account} />
             <Route exact path="/login" component={Login} />
