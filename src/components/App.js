@@ -108,11 +108,11 @@ class App extends React.Component {
   decrementQty(n) {
       let list = this.state.items;
       list[n].num--;
+      this.setState({ items: list })
       if (list[n].num <= 0) {
           /*list[n].checked = false;*/
           this.onRemoveFromOrder(list[n]);
       }
-      this.setState({ items: list })
   }
 
   itemSum = this.itemSum.bind(this);
