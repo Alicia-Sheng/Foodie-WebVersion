@@ -77,35 +77,23 @@ class App extends React.Component {
     return x + y
   }
 
-  /*incrementQty = this.incrementQty(this);
-  incrementQty(id) {
-      let list = [...this.state.items];
-      const selected = list.find(item => item.id === id);
-      const index = list.indexOf(selected);
-      const product = list[index];
-      product.num = product.num + 1;
-      product.total = product.num * product.num;
-      this.setState(()=>{
-          return {items: [...list]}
-      }, () => {
-          this.makeTotal();
-      })
-    }
+  incrementQty = this.incrementQty.bind(this);
+  incrementQty(n) {
+      let list = this.state.items;
+      list[n].num++;
+      this.setState({ items: list })
+  }
 
-  decrementQty = this.decrementQty(this);
-  decrementQty(id) {
-    let list = [...this.state.items];
-    const selected = list.find(item => item.id === id);
-    const index = list.indexOf(selected);
-    const product = list[index];
-    product.num = product.num - 1;
-    product.total = product.num * product.num;
-    this.setState(()=>{
-        return {items: [...list]}
-    }, () => {
-        this.makeTotal();
-    })
-  }*/
+  decrementQty = this.decrementQty.bind(this);
+  decrementQty(n) {
+      let list = this.state.items;
+      list[n].num--;
+      if (list[n].num <= 0) {
+          alert("Item removed");
+          list[n].checked = false;
+      }
+      this.setState({ items: list })
+  }
 
   itemSum = this.itemSum.bind(this);
   itemSum() {

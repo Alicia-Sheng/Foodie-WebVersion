@@ -43,7 +43,7 @@ class Order extends Component {
 
     sum(x, y){
       return x + y
-    }*/
+    }
 
     incrementQty(n) {
         let list = this.state.orderList;
@@ -59,7 +59,7 @@ class Order extends Component {
             list[n].checked = false;
         }
         this.setState({ orderList: list })
-    }
+    }*/
 
     render() {
         return (
@@ -91,9 +91,9 @@ class Order extends Component {
                                                                             </div>
                                                                             <div className="mor-ingredients">
                                                                                 <div className="qty-wrap input-group">
-                                                                                    <input className="input-group-btn" type="button" value="-" onClick={this.decrementQty.bind(this, i)} />
+                                                                                    <input className="input-group-btn" type="button" value="-" onClick={order.decrementQty.bind(v, i)} />
                                                                                     <input className="form-control" type="text" value={v.num} style={{ width: "20px" }} />
-                                                                                    <input className="input-group-btn" type="button" value="+" onClick={this.incrementQty.bind(this, i)} />
+                                                                                    <input className="input-group-btn" type="button" value="+" onClick={order.incrementQty.bind(v, i)} />
                                                                                 </div>
                                                                                 <span className="price">${v.price * v.num}</span>
                                                                             </div>
