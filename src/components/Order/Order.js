@@ -63,105 +63,85 @@ class Order extends Component {
 
     render() {
         return (
-          <OrderContext.Consumer>
-            {order => (
-                <section>
-                    <div className='container'>
-                        <div className="block remove-bottom">
-                            <div className="shopping_cart_area mt-70">
-                                <div className="container">
-                                    <form action="#">
-                                        <div className="row">
-                                            <div className="col-md-12 col-sm-12 col-lg-12">
-                                                <div className="order-wrapper">
-                                                    <div className="order-inner gradient-brd">
-                                                        <h4 itemProp="headline">Your Order</h4>
-                                                        <div className="order-list-wrapper">
-                                                            <ul className="order-list-inner">
-                                                                {
-                                                                    order.items.map((v, i) => {
-                                                                        return <li
-                                                                        key={i}>
-                                                                            {/*<span className={(v.checked?"active":"")+" d1"} onClick={this.tg.bind(this,i)}></span>*/}
-                                                                            <div className="dish-name">
-                                                                                <h6 itemProp="headline">{v.name}</h6> <span className="price">${v.price}</span>
-                                                                            </div>
-                                                                            <div className="dish-ingredients">
-                                                                                <span>{v.location}</span>
-                                                                            </div>
-                                                                            <div className="mor-ingredients">
-                                                                                <div className="qty-wrap input-group">
-                                                                                    <input className="input-group-btn" type="button" value="-" onClick={order.decrementQty.bind(v, i)} />
-                                                                                    <input className="form-control" type="text" value={v.num} style={{ width: "20px" }} />
-                                                                                    <input className="input-group-btn" type="button" value="+" onClick={order.incrementQty.bind(v, i)} />
-                                                                                    <input type="button" value="remove" onClick={order.onRemoveFromOrder.bind(i, v)} />
-                                                                                </div>
-                                                                                <span className="price">${parseFloat((v.price * v.num).toFixed(2))}</span>
-                                                                            </div>
-                                                                        </li>
-
-                                                                    })
-                                                                }
-                                                            </ul>
-
-                                                            <ul className="order-total">
-                                                                <li><span>SubTotal</span> <i>${order.getTotal()}</i></li>
-                                                                <li><span>Tax</span> <i>${order.getTax(order.getTotal())}</i></li>
-                                                            </ul>
-                                                            <ul className="order-method brd-rd2 red-bg">
-                                                                <li><span>Total</span> <span className="price">${order.sum(order.getTotal(), order.getTax(order.getTotal()))} </span></li>
-                                                                <li><a className="brd-rd2" href="#" title="" itemProp="url">CONFIRM ORDER</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="coupon_area">
+            <OrderContext.Consumer>
+                {order => (
+                    <>
+                        <section>
+                            <div className='container'>
+                                <div className="block remove-bottom">
+                                    <div className="page-cart">
+                                        <div className="container">
                                             <div className="row">
-                                                <div className="col-lg-6 col-md-6">
-                                                    <div className="coupon_code left">
-                                                        <h3>Coupon</h3>
-                                                        <div className="coupon_inner">
-                                                            <p>Enter your coupon code if you have one.</p>
-                                                            <input placeholder="Coupon code" type="text" />
-                                                            <button type="submit">Apply coupon</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-6 col-md-6">
-                                                    <div className="coupon_code right">
-                                                        <h3>Order Totals</h3>
-                                                        <div className="coupon_inner">
-                                                            <div className="cart_subtotal">
-                                                                <p>Subtotal</p>
-                                                                <p className="cart_amount">${order.getTotal()}</p>
-                                                            </div>
-                                                            <div className="cart_subtotal ">
-                                                                <p>Tax</p>
-                                                                <p className="cart_amount">${order.getTax(order.getTotal())}</p>
-                                                            </div>
-                                                            <a href="#">Calculate Tax</a>
+                                                <div className="col-md-8">
+                                                    <form className="cart-form table_responsive" action="#" method="post">
+                                                        <div className="order-wrapper">
+                                                            <div className="order-inner gradient-brd">
+                                                                <h4 itemProp="headline">Your Order</h4>
+                                                                <div className="order-list-wrapper">
+                                                                    <ul className="order-list-inner">
+                                                                        {
+                                                                            order.items.map((v, i) => {
+                                                                                return <li
+                                                                                    key={i}>
+                                                                                    <div className="dish-name">
+                                                                                        <img src={v.img.src} />
+                                                                                    </div>
+                                                                                    <div className="dish-name">
+                                                                                        <h6 itemProp="headline">{v.name}</h6> {/*<span className="price">${v.price}</span>*/}
+                                                                                        <span className="price">${parseFloat((v.price * v.num).toFixed(2))}</span>
+                                                                                    </div>
+                                                                                    <div className="dish-ingredients">
+                                                                                        <span>{v.location}</span>
+                                                                                    </div>
+                                                                                    <div className="mor-ingredients">
+                                                                                        <div className="qty-wrap input-group">
+                                                                                            <input className="input-group-btn" type="button" value="-" onClick={order.decrementQty.bind(v, i)} />
+                                                                                            <input className="form-control" type="text" value={v.num} />
+                                                                                            <input className="input-group-btn" type="button" value="+" onClick={order.incrementQty.bind(v, i)} />
+                                                                                        </div>
+                                                                                        {/*<span className="price">${parseFloat((v.price * v.num).toFixed(2))}</span>*/}
+                                                                                        <div className="remove-btn">
+                                                                                            <input type="button" value="Remove" onClick={order.onRemoveFromOrder.bind(i, v)} />
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </li>
 
-                                                            <div className="cart_subtotal">
-                                                                <p>Total</p>
-                                                                <p className="cart_amount">${order.sum(order.getTotal(), order.getTax(order.getTotal()))}</p>
-                                                            </div>
-                                                            <div className="checkout_btn">
-                                                                <a href="#">Proceed to Checkout</a>
+                                                                            })
+                                                                        }
+                                                                    </ul>
+
+                                                                    {/* <ul className="order-total">
+                                                                        <li><span>SubTotal</span> <i>${order.getTotal()}</i></li>
+                                                                        <li><span>Tax</span> <i>${order.getTax(order.getTotal())}</i></li>
+                                                                    </ul>
+                                                                    <ul className="order-method brd-rd2 red-bg">
+                                                                        <li><span>Total</span> <span className="price">${order.sum(order.getTotal(), order.getTax(order.getTotal()))} </span></li>
+                                                                    </ul> */}
+                                                                </div>
                                                             </div>
                                                         </div>
+
+                                                    </form>
+                                                </div>
+                                                <div className="col-md-4">
+                                                    <div className="grand-totall">
+                                                        <div className="title-wrap">
+                                                            <h4 className="cart-bottom-title section-bg-gary-cart">Order Total</h4>
+                                                        </div>
+                                                        <h5>SubTotal: <span>${order.getTotal()}</span></h5>
+                                                        <h5>Tax: <span>${order.getTax(order.getTotal())}</span></h5>
+                                                        <h4 className="grand-totall-title">Total:  <span>${order.sum(order.getTotal(), order.getTax(order.getTotal()))}</span></h4>
+                                                        <a href="checkout.html" className="btn btn-primary checkout-button">Proceed to Checkout</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </form>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </section>
-            )}
+                        </section>
+                    </>
+                )}
             </OrderContext.Consumer>
         )
     }

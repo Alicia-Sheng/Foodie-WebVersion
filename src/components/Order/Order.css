@@ -2,171 +2,14 @@ input:focus {
     outline: none;
 }
 
-.coupon_inner {
-    padding: 10px 20px 25px;
-}
-
-.coupon_inner p {
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-.coupon_inner button {
-    background: #222222;
-    border: 0;
-    color: #ffffff;
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 500;
-    height: 38px;
-    line-height: 20px;
-    padding: 10px 15px;
-    text-transform: uppercase;
-    cursor: pointer;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    border-radius: 3px;
-}
-
-.coupon_inner button:hover {
-    background: #e74c3c;
-}
-
-.coupon_inner input {
-    border: 1px solid #ededed;
-    height: 42px;
-    background: none;
-    padding: 0 20px;
-    margin-right: 20px;
-    font-size: 12px;
-    color: #222222;
-}
-
-@media only screen and (max-width: 767px) {
-    .coupon_inner input {
-        margin-bottom: 24px;
-        width: 100%;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .coupon_inner input {
-        margin-bottom: 24px;
-        width: 100%;
-    }
-}
-
-.coupon_inner a {
-    display: block;
-    text-align: right;
-    font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ededed;
-    padding-bottom: 10px;
-    border-radius: 3px;
-}
-
-.coupon_inner a:hover {
-    color: #e74c3c;
-}
-
-.coupon_code {
-    border: 1px solid #ededed;
-}
-
-@media only screen and (max-width: 767px) {
-    .coupon_code.left {
-        margin-bottom: 59px;
-    }
-}
-
-.coupon_code h3 {
-    color: #ffffff;
-    line-height: 36px;
-    padding: 5px 15px;
-    background: #222222;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-@media only screen and (max-width: 767px) {
-    .coupon_code h3 {
-        line-height: 28px;
-        padding: 5px 15px;
-        font-size: 15px;
-    }
-}
-
-.cart_subtotal {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
-.cart_subtotal p {
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.cart_subtotal p.cart_amount {
-    font-size: 18px;
-    font-weight: 500;
-}
-
-@media only screen and (max-width: 767px) {
-    .cart_subtotal p.cart_amount {
-        font-size: 14px;
-    }
-}
-
-.cart_subtotal p span {
-    margin-right: 30px;
-}
-
-.checkout_btn {
-    text-align: right;
-}
-
-.checkout_btn a {
-    background: #e74c3c;
-    color: #ffffff;
-    font-size: 15px;
-    padding: 3px 14px;
-    line-height: 30px;
-    font-weight: 500;
-    display: inline-block;
-    text-transform: capitalize;
-    margin-bottom: 0;
-}
-
-.checkout_btn a:hover {
-    background: #222222;
-    color: #ffffff;
-}
-
-.coupon_area {
-    margin-bottom: 70px;
-}
-
-@media only screen and (max-width: 767px) {
-    .coupon_area {
-        margin-bottom: 60px;
-    }
-}
-
 
 /* Order Sec 2 */
 
 .order-wrapper {
     float: left;
     width: 100%;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .order-inner {
@@ -210,6 +53,7 @@ input:focus {
     padding-bottom: 20px;
     border-bottom: 1px solid #e5e5e5;
     padding-left: 20px;
+    padding-right: 20px;
     position: relative;
 }
 
@@ -223,15 +67,23 @@ input:focus {
     display: inline-block;
     margin-left: 15px;
     font-size: 16px;
-    font-family: Lato;
+    font-family: Poppins;
     font-weight: 700;
     color: black;
     margin: 0;
 }
 
+.dish-name>img {
+    height: 100%;
+    padding-bottom: 10px;
+    ;
+}
+
 .dish-name .price {
     font-size: 15px;
     float: right;
+    font-family: Poppins;
+    font-weight: 700;
 }
 
 .dish-ingredients {
@@ -240,12 +92,6 @@ input:focus {
     margin-top: 10px;
     font-family: Lato;
     color: #636363;
-}
-
-.order-info>span.red-clr {
-    font-size: 12px;
-    font-family: Poppins;
-    display: block;
 }
 
 .gradient-brd:before {
@@ -289,31 +135,137 @@ input:focus {
 }
 
 .mor-ingredients {
-    float: left;
     width: 100%;
     margin-top: 5px;
     position: relative;
-}
-
-.mor-ingredients .price {
-    font-size: 15px;
-    float: right;
+    display: inline-block;
 }
 
 .qty-wrap {
     margin-top: 20px;
+    float: left;
 }
 
 .qty-wrap.input-group {
-    max-width: 100px;
-    float: left;
+    max-width: 150px;
 }
 
 .qty-wrap .form-control,
 .qty-wrap .input-group-btn {
     height: 35px;
-    width: 30px;
+    width: 40px;
     text-align: center;
     font-family: Poppins;
     font-weight: 700;
+}
+
+.remove-btn {
+    height: 35px;
+    width: 100px;
+    float: right;
+    text-align: center;
+    font-family: Poppins;
+    margin-top: 20px;
+}
+
+.remove-btn input {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgb(238, 235, 235);
+    color: #545353;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    border: none
+}
+
+.remove-btn input:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.table_responsive {
+    overflow-x: auto;
+}
+
+
+/*----------------------------- order form -------------------------------*/
+
+.grand-totall {
+    background-color: #f9f9f9;
+    border: 1px solid #f1f1f1;
+    padding: 20px 30px 50px;
+}
+
+.grand-totall h5 {
+    margin: 20px 0px;
+}
+
+.grand-totall>h5 span {
+    float: right;
+}
+
+.total-shipping ul li input {
+    background: #e9e9e9 none repeat scroll 0 0;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px !important;
+    color: #626262;
+    cursor: pointer;
+    height: 13px;
+    margin-right: 10px;
+    padding: 0;
+    position: relative;
+    top: 2px;
+    width: 13px;
+}
+
+.total-shipping {
+    border-bottom: 1px solid #f1f1f1;
+    border-top: 1px solid #f1f1f1;
+}
+
+.total-shipping ul li {
+    list-style: outside none none;
+    margin: 0 0 6px;
+}
+
+.total-shipping ul li:last-child,
+.register-us-2 li:last-child {
+    margin: 0 0 0px;
+}
+
+.total-shipping ul li span {
+    float: right;
+}
+
+h4.grand-totall-title {
+    color: #e74c3c;
+    font-size: 20px;
+    margin: 25px 0px;
+}
+
+h4.grand-totall-title span {
+    float: right;
+}
+
+.checkout-button {
+    font-family: Poppins;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #161616;
+    border-color: #161616;
+}
+
+.checkout-button:hover {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+.table_responsive {
+    overflow-x: auto;
+}
+
+.table_responsive {
+    overflow-x: auto;
 }
