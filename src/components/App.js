@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { createBrowserHistory } from "history";
 import data from '../../assets/data.js'
 
 import Header from './Header/Header'
@@ -14,6 +15,7 @@ import order from './Order/Order'
 import Account from './Account/Account'
 import Login from './Account/Login'
 import Register from './Account/Register'
+// import Toast from './Toast/Toast';
 
 {/*
 import BeefSpringRolls from './Food/BeefSpringRolls'
@@ -27,6 +29,7 @@ import {
   OrderContext
 } from "./Context/OrderContext";
 
+const history = createBrowserHistory();
 
 class App extends React.Component {
 
@@ -61,7 +64,6 @@ class App extends React.Component {
 
   onRemoveFromOrder = this.onRemoveFromOrder.bind(this);
   onRemoveFromOrder(p) {
-    /*alert("Item removed");*/
     let newArray = [...this.state.products];
     let remove = newArray.find(item => item.id === p.id);
     remove.inCart = false;
@@ -127,7 +129,7 @@ class App extends React.Component {
 
   render() {
     return(
-      <Router>
+      <Router history={history}>
         <OrderContext.Provider
           value={{
             items: this.state.items,
