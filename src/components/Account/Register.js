@@ -97,14 +97,17 @@ class Register extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    console.log('100')
     // let history = useHistory();
     if (this.handleValidation()) {
-      const username = this.users.value;
-      const password = this.password.value;
+      const username = this.state.fields["username"];
+      const password = this.state.fields["password"];
       let user = localStorage.getItem('user');
+      console.log('105')
       if (user) {
         // if user exists
         alert("User already exists, please sign in!");
+        // localStorage.removeItem('user');
       } else {
         // if user not exists
         alert("Successfully registered as a " + this.state.fields["userType"] + "!");

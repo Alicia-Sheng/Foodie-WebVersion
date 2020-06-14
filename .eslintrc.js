@@ -10,6 +10,9 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
+  rules: {
+    'no-console': 'off'
+  },
   parser: "babel-eslint",
   plugins: ['react'],
   extends: ['eslint:recommended', 'plugin:react/recommended'],

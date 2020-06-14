@@ -1,51 +1,60 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import './Login.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-class Login extends React.Component{
-  constructor(props){
+class Login extends React.Component {
+  constructor(props) {
     super(props);
-    this.state = {username: '', password: ''};
+    this.state = { username: '', password: '' };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange(event){
+  handleChange(event) {
     const target = event.target;
     const name = target.name;
     var value = target.value;
-    this.setState({[name]: value});
+    this.setState({ [name]: value });
   }
 
   // Temporary function
-  handleSubmit(event){
+  handleSubmit(event) {
+    event.preventDefault();
     let obj = [];
-    const username = this.user.value;
-    const password = this.password.value;
+    const username = this.state.username
+    const password = this.state.password;
     let user = localStorage.getItem('user');
-    let history = useHistory();
+    // let history = useHistory();
+
     if (user) {
       // if user exist
       // compare locally stored value with input
-      let flag = obj.some(item => {
-        if (item.username === username) return true // username exists
-      })
+      console.log('36')
+      obj = JSON.parse(user)
 
-      if (flag) {// check password if username exists
+      // let flag = obj.some(item => {
+      //   if (item.username === username) return true // if username exists 
+      // })
+      let flag = false
+      if (obj.username === username) {
+        flag = true;
+      }
+
+      if (flag) {
+        // check password if username exists
         // compare locally stored value with input
-        let f = false
-        obj.map(item => {
-          if (item.username === username && item.password === password) {
-            f = true;
-            return f;
+
+          flag = false;
+          if (obj.username === username && obj.password === password) {
+            flag = true;
           }
-        })
-        if (f) {// user logged in if user credentials verified
+          
+        if (flag) {// user logged in if user credentials verified
           alert('Wecome back, ' + username + "!")
-          history.push('/home')
+          // history.push('/home')
         } else {
           alert('Wrong password!')
         }
@@ -58,19 +67,17 @@ class Login extends React.Component{
       // if user not found
       alert('User not found, plese sign up!')
     }
-    alert('Username: ' + this.state.username + ' Password: ' + this.state.password);
-
-    event.preventDefault();
+    // alert('Username: ' + this.state.username + ' Password: ' + this.state.password);
   }
 
-  render(){
+  render() {
     return (
       <section>
         <div className="block">
           <div className='container'>
             <div className='login-form'>
               <h1>SIGN IN</h1>
-              <br/>
+              <br />
               <form onSubmit={this.handleSubmit}>
                 <div className="form-group">
                   <input className="form-control" type="text" name="username" value={this.state.username} placeholder="username" onChange={this.handleChange} />
