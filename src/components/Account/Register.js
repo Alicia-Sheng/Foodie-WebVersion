@@ -50,6 +50,19 @@ class Register extends React.Component{
       }
     }
 
+    // Phone number
+    if(!fields["phone"]){
+      formIsValid = false;
+      errors["phone"] = "Phone number cannot be empty";
+    }
+
+    if(typeof fields["phone"] !== "undefined"){
+      if (!fields["phone"].match(/^[0-9]+$/) || fields["phone"].length !== 10) {
+        formIsValid = false;
+        errors["phone"] = "Phone number is not valid";
+      }
+    }
+
     // Password
     if(!fields["password"]){
       formIsValid = false;
@@ -113,6 +126,10 @@ class Register extends React.Component{
                 <div className="form-group">
                   <input className="form-control" type="text" name="email" value={this.state.fields["email"]} placeholder="email" onChange={this.handleChange.bind(this, "email")} />
                   <span style={{color: "red"}}>{this.state.errors["email"]}</span>
+                </div>
+                <div className="form-group">
+                  <input className="form-control" type="text" name="phone" value={this.state.fields["phone"]} placeholder="phone number" onChange={this.handleChange.bind(this, "phone")} />
+                  <span style={{color: "red"}}>{this.state.errors["phone"]}</span>
                 </div>
                 <div className="form-group">
                   <input className="form-control" type="password" name="password" value={this.state.fields["password"]} placeholder="password" onChange={this.handleChange.bind(this, "password")} />
