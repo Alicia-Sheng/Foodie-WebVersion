@@ -11,7 +11,7 @@ import Einstein from './Menu/Einstein'
 import Starbucks from './Menu/Starbucks'
 
 import order from './Order/Order'
-import Account from '../Account'
+import Account from './Account/Account'
 import Login from './Account/Login'
 import Register from './Account/Register'
 
