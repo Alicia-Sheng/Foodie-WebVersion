@@ -2,6 +2,8 @@ import React from 'react'
 
 import '../../style.css'
 
+import foodData from '../../../assets/data'
+
 function SausageCroissant() {
   return (
     <section>
@@ -11,7 +13,7 @@ function SausageCroissant() {
             <h2 itemProp="headline">Sausage Croissant</h2>
           </div>
         </div>
-
+        <FoodList data={foodData} foodName="Sausage Croissant" />
       </div>
     </section>
   )

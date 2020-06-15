@@ -24,6 +24,11 @@ const Card = ({ food }) => {
             <div className='card-header'>
                 <a href="#" title="" itemProp="url">
                     <Img src={food.img.src} className='card-img-top' alt={food.img.alt} />
+                    {/*
+                    <Link to={link}>
+                      <Img src={food.img.src} className = 'card-img-top' alt={food.img.alt} itemProp="image"/>
+                    </Link>
+                    */}
                 </a>
                 <span className="post-rate"><FontAwesomeIcon icon={faStar} /> {`${food.rating}`}</span>
             </div>
