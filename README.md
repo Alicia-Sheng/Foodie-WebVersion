@@ -1,10 +1,10 @@
-# FOODIE
+# Foodie
 
 A React food ordering app, Foodie, designed to provide university students with quick and easy food ordering from restaurants and cafes on campus.
 
 ## Table of Contents
 
-- [FOODIE](#Foodie)
+- [Foodie](#Foodie)
   - [Table of Contents](#table-of-contents)
   - [Background](#background)
     - [What is Foodie](#what-is-foodie)
